@@ -8,7 +8,7 @@
 
 body {
     background-color: #f8f7f7;
-    height: 100vh;
+    height: 95vh;
 }
 
 .interface {
@@ -108,6 +108,74 @@ header .menu-desktop a:hover {
 
 header nav ul {
     list-style-type: none;
+}
+
+
+
+/* ---------- Estilo menu Mobile ----------------- */
+
+.btn-abrir-menu i {
+    color: #FF7629;
+    font-size: 40px;
+    display: none;
+}
+
+.menu-mobile {
+    background-color: #555453;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    transition: .3s;
+    overflow: hidden;
+    display: none;
+}
+
+.menu-mobile.abrir-menu {
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu {
+    display: block;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 10px 10%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: #FF7629;
+    color: #726c6c;
+}
+
+.overlay-menu {
+    background-color: #000000c5;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+.menu-mobile .btn-fechar {
+    padding: 20px 8%;
+}
+
+.menu-mobile .btn-fechar i {
+    color: #FF7629;
+    font-size: 25px;
 }
 
 /* ----------------- Estilo do Topo do Site ---------------- */
@@ -302,6 +370,11 @@ section.portifolio .flex{
     transition: 2s;
 }
 
+.overlay a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Herda a cor do texto do elemento pai */
+}
+
 .overlay:hover {
     opacity: 1;
 }
@@ -421,7 +494,7 @@ footer .line-footer p{
     }
 }
 
-@media screen and (max-width: 964,1px) {
+@media screen and (max-width: 964px) {
     /* Ajustes adicionais para telas menores */
     header .menu-desktop{
         display: none;
@@ -443,3 +516,4 @@ footer .line-footer p{
         padding: 40px;
     }
 }
+
