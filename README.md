@@ -1,44 +1,64 @@
-### Olá sou Haroldo Alcobaças 👋
-✨>>>>>>>> [Meu Site](https://haroldoalcobacas.github.io/haroldoalcobacas/) <<<<<<<<<✨
-<!--
-**haroldoalcobacas/haroldoalcobacas** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.-->
+### Olá, sou Haroldo Alcobaças 👋  
+✨ [Meu Site](https://haroldoalcobacas.github.io/haroldoalcobacas/) ✨
 
+**Engenheiro de Software | Desenvolvedor Backend | Especialista em Gestão de Projetos**
+Com sólida experiência em **gestão de processos, qualidade e melhoria contínua**, aplico essa expertise no desenvolvimento de **soluções tecnológicas**, **automação de processos (RPA)** e **integração de sistemas**, entregando valor estratégico para empresas e clientes.
 
- - 🔭 Em processo de migração de carreira para tecnologia.
- - 🌱 Apaixonado por tecnologia e otimização de processos, cursando engenharia de Software e com habilidades em programação, experiência com ferramentas de gestão
-    e análise de dados, como Power BI e desenvolvimento de aplicativos Low-code com PowerApps e automação RPA, PowerAutomate e UiPath.
+**Meu diferencial:** unir visão estratégica de negócios, gestão de projetos, metodologias ágeis e excelência operacional à capacidade técnica para transformar processos complexos em soluções digitais ágeis, escaláveis e eficientes.
 
-               • Python • Django • Java • Spring • MySQL • SQL Server • PostgreSQL • MongoDB • GitHub • Docker • UiPath • PowerAutomate
+**Atuação:** desenvolvimento de sistemas web, automação de processos, dashboards analíticos e integração entre tecnologia e negócio. Focado em inovação, melhoria contínua e entrega de resultados mensuráveis.
 
+🎯 **Visão profissional:** acredito no poder da tecnologia como ferramenta de transformação e estou sempre em busca de desafios que permitam aplicar meus conhecimentos, aprender continuamente e gerar impacto positivo para empresas e pessoas.
 
+## Linguagens e Tecnologias
+- **Linguagens & Frameworks:** Python, Django, PHP/Laravel, JavaScript, HTML, CSS  
+- **Bancos de dados:** PostgreSQL, SQL , MongoDB
+- **Automação & RPA:** UiPath, Power Automate, PowerApps  
+- **Business Intelligence:** Power BI  
+- **Metodologias:** BPM, Scrum, Six Sigma, DMAIC  
 
-<div align="Rigth">
-  <a href="https://github.com//haroldoalcobacas">
+<div align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=haroldoalcobacas&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=haroldoalcobacas&layout=compact&langs_count=7&theme=dracula"/>
 </div>
 
-  <div style="display: inline_block"><br>
-    <img align="center" alt="Mateus-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-    <img align="center" alt="Mateus-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-    <img align="center" alt="Mateus-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-  
-  <img align="center" alt="Mateus-Ts" height="50" width="70" img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg">
-  <img align="center" alt="Mateus-React" height="30" width="40" img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
-  <img align="center" alt="Mateus-React" height="50" width="60" img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original-wordmark.svg">
-  <img align="center" alt="Mateus-React" height="50" width="60" img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg">
+---
 
+## Minhas Skills
+
+<div style="display: inline_block"><br>
+  <img align="center" alt="Python" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+  <img align="center" alt="Django" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg">
+  <img align="center" alt="Django" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-plain.svg">
+  <img align="center" alt="NumPy" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original-wordmark.svg">
+  <img align="center" alt="Java" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg">
+  <img align="center" alt="Spring" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg">
+  <img align="center" alt="PHP" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg">
+  <img align="center" alt="Laravel" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-original.svg">
   
+  <img align="center" alt="JavaScript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+  <img align="center" alt="Bootstrap" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain.svg">
+  <img align="center" alt="Tailwind CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg">
+
+  <img align="center" alt="HTML5" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="CSS3" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  
+  <img align="center" alt="MySQL" height="50" width="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg">
+  
+ <img align="center" alt="Docker" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg">
+ <img align="center" alt="PostgreSQL" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg">
+ <img align="center" alt="SQL" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg">
+
 </div>
 
-  
-  <div> 
- 
-  <a href = "mailto:haroldo.alcobacas@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/haroldoalcobacas/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
- 
-  ![Snake animation](https://github.com/haroldoalcobacas/haroldoalcobacas/blob/output/github-contribution-grid-snake.svg)
- 
-</div>
+---
 
+## Contato
+
+[![Gmail](https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white)](mailto:haroldo.alcobacas@gmail.com)  
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/haroldoalcobacas/)
+
+---
+
+![GitHub Snake animation](https://github.com/haroldoalcobacas/haroldoalcobacas/blob/output/github-contribution-grid-snake.svg)
 
