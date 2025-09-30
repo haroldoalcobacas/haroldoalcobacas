@@ -22,7 +22,7 @@ body {
 
 .btn-contato button {
     padding: 10px 30px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 800;
     color: #ffffff;
     background-color: #FF7629;
@@ -38,7 +38,7 @@ button:hover {
 }
 
 h2.titulo-temas {
-    color: #726c6c;
+    color: #676f86;
     font-size: 33px;
     text-align: center;
     margin-top: 10px;
@@ -73,13 +73,13 @@ header .interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 
 header .menu-desktop ul {
     display: flex; 
-    gap: 20px;
+    gap: 40px;
 }
 
 header .menu-desktop {
@@ -94,7 +94,7 @@ header .menu-desktop ul li {
 
 
 header a {
-    color: #838485;
+    color: #676f86;
     text-decoration: none;
     display: inline-block;
     font-weight: bold;
@@ -121,7 +121,7 @@ header nav ul {
 }
 
 .menu-mobile {
-    background-color: #555453;
+    background-color: #676f86;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -155,7 +155,7 @@ header nav ul {
 
 .menu-mobile nav ul li a:hover {
     background-color: #FF7629;
-    color: #726c6c;
+    color: #676f86;
 }
 
 .overlay-menu {
@@ -192,9 +192,13 @@ section.topo-do-site .flex {
     gap: 40px;
     
 }
-
+.topo-do-site {
+    background: url('./images/bg.jpg') no-repeat center center;
+    background-size: cover;
+    
+}
 .topo-do-site h1 {
-    color: #726c6c;
+    color: #676f86;
     font-size: 35px;
     line-height: 10px;
 }
@@ -205,7 +209,7 @@ section.topo-do-site .flex {
 }
 
 .topo-do-site .txt-topo-site p {
-    color: #726c6c;
+    color: #404657;
     font-size: 20px;
     margin-top: 30px;
     margin-bottom: 45px;
@@ -217,7 +221,7 @@ section.topo-do-site .flex {
 }
 
 .topo-do-site .img-topo-site img {
-    width: 110%;
+    width: 130%;
     margin-right: 55px;
     position: relative;
     animation: flutuar 2.5s ease-in-out infinite alternate;
@@ -245,7 +249,7 @@ section.especialidades .flex {
 }
 
 .especialidades .especialidades-box {
-    color: #726c6c;
+    color: #676f86;
     padding: 0px 4% 5%;
     border-radius: 20px;
     margin-top: 70px;
@@ -270,7 +274,7 @@ section.especialidades .flex {
 
 /* ----------- Estilo Sobre Mim  ----------- */
 section.sobre-mim {
-    padding: 10px 4%;
+    padding: 20px 4%;
     height: 98vh;
     background-color:#e0e0e0;
 }
@@ -278,11 +282,11 @@ section.sobre-mim {
 section.sobre-mim .flex {
     align-items: flex-start;
     gap: 40px;
-    margin-top: 20PX;
+    margin-top: 30PX;
 }
 
 .sobre-mim .txt-sobre {
-    color: #726c6c;
+    color: #676f86;
 }
 
 .sobre-mim .txt-sobre h2 {
@@ -300,7 +304,7 @@ section.sobre-mim .flex {
     margin: 20px 0;
     font-size: 16px;
     text-align: justify;
-    color: #726c6c;
+    color: #676f86;
 }
 
 .btn-social button {
@@ -325,15 +329,38 @@ section.portifolio {
 
 section.portifolio .flex{
     justify-content: space-around;
-    margin-top: 16px;
+    margin-top: 56px;
 }
+
+.project-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #676f86;
+    position: relative;
+    cursor: default;
+    transition: color 0.3s;
+}
+
+.project-subtitle {
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #afb0b3;
+    position: relative;
+    cursor: default;
+
+}
+
 
 .img-port{
     width: 360px;
     height: 440px;
     
     background-size: cover;
-    background-position: 100% 0%;
+    background-position: 100% 20%;
     margin-top: 20px;
     border-radius: 20px;
     cursor: pointer;
@@ -342,7 +369,7 @@ section.portifolio .flex{
 }
 
 .img-port:hover {
-    background-position: 100% 100%;
+    background-position: 100% 80%;
     transition: 5s;
 }
 
@@ -357,7 +384,7 @@ section.portifolio .flex{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(36, 36, 1, 0.918);
+    background-color: rgba(36, 36, 1, 0.4);
     border-radius: 20px;
     border: 10px;
     display: flex;
@@ -393,7 +420,7 @@ footer .top-footer button{
 }
 
 footer .bottom-footer{
-    color: #696868;
+    color: #1e2435;
     font-size: 16px;
 }
 
@@ -446,12 +473,13 @@ footer .line-footer p{
 
     /* Especialidades */
     section.especialidades {
-        padding: 10px 8%;
+        padding: 10px 6%;
     }
     section.especialidades .flex {
-        gap: 5px;
+        gap: 6px;
     }
     h2.titulo-temas {
+        margin-top: 3rem;
         font-size: 30px;
         line-height: 40px;
     }
