@@ -2,169 +2,158 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <!--GoogleFontes-->
+    <link rel="stylesheet" href="responsivo.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-    <!--GoogleFontes-->
-    <!--Bootstrap Icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!--Bootstrap Icons-->
-    <script src="menu.js"defer></script>
-    <title> Site Pessoal </title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <title>Meu Portifólio</title>
 </head>
 <body>
     <header>
-        <div class="interface" id="interface">
-            <div class="logo">
-                <a href="">
-                    <img src="images/logo.png" alt="Logotipo do Site"width="150" height="auto">
-                </a>
-            </div><!-- logo -->
-        
+        <div class="interface">
+
+            <section class="logo-cabecalho">
+                <img src="images/logo.png" alt="Logo do site">            
+            </section>
+
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#sobre-mim">Sobre</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre-mim">Sobre mim</a></li>
                     <li><a href="#especialidades">Especialidades</a></li>
                     <li><a href="#portifolio">Projetos</a></li>
+                    <li><a href="https://github.com/haroldoalcobacas" target="_blank"><button>Contato</button></a></li>
                 </ul>
             </nav>
-        
-            <div class="btn-contato">
-                <a href="https://web.whatsapp.com/send?phone=5531996326936" target="_blank">
-                    <button><i class="bi bi-whatsapp"></i></button>
-                </a>
-            </div><!-- btn-contato -->
-
-           <div class="btn-abrir-menu" id="btn-menu">
+            
+            <!-- Botão abrir menu mobile -->
+            <div class="btn-menu-mobile" id="btn-menu-mobile">
             <i class="bi bi-list"></i>
-           </div>
+            </div>
 
-           <div class="menu-mobile" id="menu-mobile">
-                <div class="btn-fechar">
-                    <i class="bi bi-x-lg"></i>
-                </div>
-                <nav>
-                    <ul>
-                        
-                        <li> <a href="#sobre-mim">Sobre</a></li>
-                        <li> <a href="#especialidades">Especialidades</a></li>
-                        <li> <a href="#portifolio">Projetos</a></li>
-                        
-                        <li> <a href="#">Contato</a></li> 
-                    </ul>
-               </nav>
+            <nav class="menu-mobile" id="menu-mobile">
+                <i class="bi bi-x-circle" id="btn-fechar-menu"></i>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre-mim">Sobre mim</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#portifolio">Projetos</a></li>
+                    <li><a href="https://github.com/haroldoalcobacas" target="_blank">Contato</a></li>
+                </ul>
+            </nav>
 
-           </div><!--btn-mobile-->
-
-           <div class="overlay-menu" id="overlay-menu"></div>
-
-        </div><!-- interface -->
-
+        </div>
     </header>
+
     <main>
-        <section class="topo-do-site">
+        <section class="hero" id="inicio">
             <div class="interface">
-                <div class="flex">
-                    <div class="txt-topo-site" id="topo-do-site">
-                        <h1>Transformando ideias em <span>soluções.</span></h1>
+
+                <div class="img-hero">
+                    <img src="images/perfil.png" alt="Foto Haroldo Alcobaças">    
+                </div>
+
+                <div class="texto-hero">
+                        <h1>Transformando ideias em <span>Soluções.</span></h1>
                         <p>Inove, antecipe-se e crie soluções excepcionais.
                             A arte de transformar ideias em soluções ganha vida por meio da fusão 
                             entre criatividade e tecnologia.
                         </p>
-                        
-                        <div class="btn-contato">
-                            <a href="mailto:haroldo.alcobacas@gmail.com" target="_blank">
-                                <button>Entre em Contato</button>
-                            </a>
-            
-                       </div>
-                    </div><!---txt-topo-site-->
+                        <a href="https://github.com/haroldoalcobacas" target="_blank"><button>Vamos conversar!</button></a>
+                </div>
 
-                    <div class="img-topo-site">
-                        <img src="images/foto.png" alt="">
-
-                    </div><!--img-topo-site-->
-
-                </div><!--flex-->
-
-            </div><!--interface-->
-
-        </section><!--Topo-do-site-->
+            </div>
+        </section>
 
         <section class="sobre-mim" id="sobre-mim">
             <div class="interface">
-                <h2 class="titulo-temas">SOBRE <span>MIM.</span></h2>
 
-                <div class="flex">
+                <div class="txt-sobre">
+                    <h1 class="titulo2-section">Sobre <span>Mim</span></h1>
 
-                    <div class="img-sobre">
-                        <img src="images/perfil.png" alt="">
-                    </div><!--img-sobre-->
+                    <h2>Muito prazer, <span>sou Haroldo Alcobaças</span></h2>
 
-                    <div class="txt-sobre">
-                        <h2>MUITO PRAZER, <span>Sou Haroldo Alcobaças</span></h2>
+                    <p><strong>Engenheiro de Software | Desenvolvedor Backend | Especialista em Gestão de Projetos</strong></p>
 
-                        <p><strong>Engenheiro de Software | Desenvolvedor Backend | Especialista em Gestão de Projetos</strong></p>
+                    <p>Com sólida experiência em <strong>gestão de projetos, mapeamento de processos e melhoria contínua</strong>, aplico essa bagagem no desenvolvimento de <strong>soluções tecnológicas</strong>, <strong>automação de processos (RPA)</strong> e <strong>integração de sistemas</strong>, gerando valor estratégico para empresas e clientes.</p>
 
-                        <p>Com sólida experiência em <strong>gestão de processos, qualidade e melhoria contínua</strong>, aplico essa expertise no desenvolvimento de <strong>soluções tecnológicas</strong>, <strong>automação de processos (RPA)</strong> e <strong>integração de sistemas</strong>, entregando valor estratégico para empresas e clientes.</p>
+                    <p>💡 <strong>Meu diferencial:</strong> unir visão estratégica de negócios, metodologias ágeis e excelência operacional à capacidade técnica para transformar processos complexos em soluções digitais ágeis, escaláveis e eficientes.</p>
 
-                        <p><strong>Meu diferencial:</strong> unir visão estratégica de negócios, gestão de projetos, metodologias ágeis e excelência operacional à capacidade técnica para transformar processos complexos em soluções digitais ágeis, escaláveis e eficientes.</p>
+                    <p>🎯 <strong>Atuação:</strong> desenvolvimento de sistemas web, automação de processos, dashboards analíticos e integração entre tecnologia e negócio — sempre com foco em inovação, melhoria contínua e resultados mensuráveis.</p>
 
-                        <p><strong>Tecnologias e metodologias:</strong></p>
-                        <ul>
-                            <li><strong>Linguagens & Frameworks:</strong> Python, Django, PHP/Laravel, JavaScript, HTML, CSS</li>
-                            <li><strong>Bancos de dados:</strong> PostgreSQL, SQL</li>
-                            <li><strong>Automação & RPA:</strong> UiPath, Power Automate, PowerApps</li>
-                            <li><strong>Business Intelligence:</strong> Power BI</li>
-                            <li><strong>Metodologias:</strong> BPM, Scrum, Six Sigma, DMAIC</li>
-                        </ul>
 
-                        <p> <strong>Atuação:</strong> desenvolvimento de sistemas web, automação de processos, dashboards analíticos e integração entre tecnologia e negócio. Focado em inovação, melhoria contínua e entrega de resultados mensuráveis.</p>
-                        <p>🎯<strong>Visão profissional:</strong> acredito no poder da tecnologia como ferramenta de transformação e estou sempre em busca de desafios que permitam aplicar meus conhecimentos, aprender continuamente e gerar impacto positivo para empresas e pessoas.</p>
+                    <div class="tecnologias">
+                        <h3><span> Tecnologias</span></h3>
+                        <div class="icones-tech">
+                            <img align="center" alt="Python" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+                            <img align="center" alt="Django" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg">
 
-                        
-                        <div class="btn-social">
-                            <a href="https://web.whatsapp.com/send?phone=5531996326936" target="_blank"><button><i class="bi bi-whatsapp"></i></button></a>
-                            <a href="https://www.linkedin.com/in/haroldoalcobacas/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
-                            <a href="https://github.com/haroldoalcobacas" target="_blank"><button><i class="bi bi-github"></i></button></a>
+                            <img align="center" alt="Java" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg">
+                            <img align="center" alt="Spring" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg">
+                            <img align="center" alt="PHP" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg">
+                            <img align="center" alt="Laravel" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-original.svg">
                             
-                        </div><!--btn-social-->
+                            <img align="center" alt="JavaScript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+                            <img align="center" alt="Bootstrap" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain.svg">
+                            <img align="center" alt="Tailwind CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg">
 
-                    </div><!--txt-sobre-->
+                            
+                            <img align="center" alt="MySQL" height="50" width="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg">
+                            
+                            <img align="center" alt="Docker" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg">
+                            <img align="center" alt="PostgreSQL" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg">
+                            <img align="center" alt="SQL" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg">
+                        </div>
+                    </div>
 
-                    
+                    <div class="btn-redes">
+                        <a href="https://web.whatsapp.com/send?phone=5531996326936" target="_blank">
+                            <button><i class="bi bi-whatsapp"></i></button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/haroldoalcobacas/" target="_blank">
+                            <button><i class="bi bi-linkedin"></i></button>
+                        </a>
+                        <a href="https://github.com/haroldoalcobacas" target="_blank">
+                            <button><i class="bi bi-github"></i></button>
+                        </a>
+                    </div>
+                </div>
 
-                </div><!--flex-->
-                <div class="btn-voltar">
-                    <a href="#interface">
-                        <button>voltar</button>
-                    </a>
-                </div><!--btn-voltar-->
-        </section><!--sobreMin-->
+                <div class="img-sobre">
+                    <img src="images/sobre-mim.png" alt="Foto Haroldo Alcobaças">
+                </div>
 
+            </div>
+        </section>
 
         <section class="especialidades" id="especialidades">
             <div class="interface">
-                <h2 class="titulo-temas">MINHAS <span>ESPECIALIDADES.</span></h2>
+                <h1 class="titulo-section">Minhas <span>Especialidades</span></h1>               
 
                 <div class="flex">
 
                     <div class="especialidades-box">
-                        <i class="bi bi-code-square"></i>
-                    <h3>Desenvolvimento Backend/Frontend</h3>
-                    <p>
-                    Atualmente, dedico grande parte do meu tempo ao desenvolvimento de projetos web, utilizando PHP/Laravel, JavaScript, Python e Django. Tenho foco em soluções backend eficientes, sempre buscando resolver desafios reais do dia a dia e aprimorar minhas habilidades técnicas.
-                    </p>
+                        <div class="icon-especialidades" alt="icone">
+                            <i class="bi bi-code-square"></i>
+                            <h3>Desenvolvimento Backend/Frontend</h3>
+                        </div>
+                        <p>
+                        Atualmente, dedico grande parte do meu tempo ao desenvolvimento de projetos web, utilizando PHP/Laravel, JavaScript, Python e Django. Tenho foco em soluções backend eficientes, sempre buscando resolver desafios reais do dia a dia e aprimorar minhas habilidades técnicas.
+                        </p>
 
                     </div><!--especialidades-box-->
 
                     <div class="especialidades-box">
-                        <i class="bi bi-robot"></i>
-                        <h3>Automação RPA</h3>
+                        <div class="icon-especialidades" alt="icone">
+                            <i class="bi bi-robot"></i>
+                            <h3>Automação RPA</h3>
+                        </div>                        
+
                         <p>
                         Tenho experiência em automação de processos utilizando Power Automate, UiPath e Python. Aplicando RPA, desenvolvo soluções para automatizar relatórios, rotinas repetitivas e integrar processos com projetos de análise de dados, otimizando tempo e aumentando a eficiência operacional.
                         </p>
@@ -172,31 +161,32 @@
                     </div><!--especialidades-box-->
 
                     <div class="especialidades-box">
-                        <i class="bi bi-clipboard-data"></i>
-                    <h3>Data Analytics</h3>
-                    <p>
-                    Com mais de 3 anos de experiência em análise de dados, utilizo ferramentas como Power BI para transformar informações em insights estratégicos. Atuo no desenvolvimento de dashboards claros e eficientes e na gestão de projetos de análise, auxiliando na tomada de decisões assertivas.
-                    </p>
+                        <div class="icon-especialidades" alt="icone">
+                            <i class="bi bi-clipboard-data"></i>
+                            <h3>Data Analytics</h3>
+                        </div>                       
 
-
+                        <p>
+                        Com mais de 3 anos de experiência em análise de dados, utilizo ferramentas como Power BI para transformar informações em insights estratégicos. Atuo no desenvolvimento de dashboards claros e eficientes e na gestão de projetos de análise, auxiliando na tomada de decisões assertivas.
+                        </p>
                     </div><!--especialidades-box-->
+                    
+
 
                 </div><!--flex-->
-                
-                <div class="btn-voltar">
-                    <a href="#interface">
-                        <button>voltar</button>
-                    </a>
-                </div><!--btn-voltar-->
-                
-            </div><!--interface-->
-        </section><!--especialidades-->
-        
-        
 
+                <div class="btn-contato">
+                    <a href="https://github.com/haroldoalcobacas" target="_blank"><button>Entre em Contato!</button></a>
+                </div>
+                
+
+            </div>
+            
+        </section>
+            
         <section class="portifolio" id="portifolio">
             <div class="interface">
-                <h2 class="titulo-temas">MEU <span>PORTIFÓLIO.</span></h2>
+                <h1 class="titulo2-section">Meu <span>Portfólio.</span></h1>
 
                 <div class="flex">
 
@@ -241,43 +231,33 @@
 
                 </div><!--flex-->
 
-                <div class="btn-voltar">
-                    <a href="#interface">
-                        <button>voltar</button>
-                    </a>
-                </div><!--voltar-->
-
             </div><!--interface-->    
         </section><!--portifolio-->
 
-
     </main>
 
-    <footer>
+    <footer id="contato">
         <div class="interface">
-            <section class="top-footer">                
-                                       
-                    <div class="btn-social">
-                        <a href="https://web.whatsapp.com/send?phone=5531996326936" target="_blank"><button><i class="bi bi-whatsapp"></i></button></a>
-                        <a href="https://www.linkedin.com/in/haroldoalcobacas/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
-                        <a href="https://github.com/haroldoalcobacas" target="_blank"><button><i class="bi bi-github"></i></button></a>
-                        <a href="mailto:haroldo.alcobacas@gmail.com" target="_blank"><button><i class="bi bi-envelope-at"></i></button></a>
-                    </div><!--btn-social-->        
-            </section><!--Top-footer-->
 
-
-            <section class="line-footer"> 
-                <p></p>
-
-            </section><!--line-footer-->
-
-            <section class="bottom-footer">
-                <p> "A mente que se abre à uma nova ideia jamais voltará ao seu tamanho original". (Ralph Emerson)</p>
-            </section><!--bottom-footer-->
+            <div class="logo-footer">
+                <img src="images/logo-.png" alt=" logo do site">
+                <h2>Vamos trabalhar juntos?</h2>
+                <p>Entre em contato comigo para discutirmos como posso ajudar a transformar suas ideias em soluções inovadoras.</p>
             
+            </div>
+            <div class="btn-redes">
+                <a href="https://web.whatsapp.com/send?phone=5531996326936" target="_blank"><button><i class="bi bi-whatsapp"></i></button>
+                </a>
+                <a href="https://www.linkedin.com/in/haroldoalcobacas/" target="_blank"><button><i class="bi bi-linkedin"></i></button>
+                </a>
+                <a href="https://github.com/haroldoalcobacas" target="_blank"><button><i class="bi bi-github"></i></button>
+                </a>
+            </div>
 
-        </div><!--interface-->
+
+        </div>
     </footer>
-
+    <script src="menu_mobile.js"></script>
+    
 </body>
 </html>

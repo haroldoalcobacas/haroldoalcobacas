@@ -1,335 +1,422 @@
-/* Estilo Geral */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+}
+:root{
+    --cor-primary: #fbca2d;
+    --cor-primary2:#e0ae0a;
+
+    --cor-secondary: #17043b;
+    --cor-secondary2: #2e1b81;
+    --cor-terciary: #ffffff;
+    --cor-quaternary: #c2ceda;
+    --cor-bg-button: #fff596;
+    --cor-texto: #fcfbfb;
+    --cor-link: #0066CC;
+    --cor-link-hover: #004999;
 }
 
-body {
-    background-color: #f8f7f7;
-    height: 95vh;
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}   
+
+body{
+    background-color: var(--cor-terciary);
+    color: var(--cor-secondary);
+
 }
 
-.interface {
-    max-width: 1280px;
+h1.titulo-section{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--cor-texto);  
+}
+h1.titulo-section span{
+    color: var(--cor-primary);
+}
+
+h1.titulo2-section{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--cor-link-hover);  
+}
+
+h1.titulo2-section span{
+    color: var(--cor-primary2);
+}
+
+.interface{
+    width: 90%;
+    max-width: 1380px;
+    padding: 0 1%;
     margin: 0 auto;
 }
 
-.flex {
-    display: flex;
-}
-
-.btn-contato button {
-    padding: 10px 30px;
-    font-size: 16px;
-    font-weight: 800;
-    color: #ffffff;
-    background-color: #FF7629;
-    border: 0;
-    border-radius: 18px;
+button{
+    background-color: transparent;
+    border: 2px solid var(--cor-terciary);
+    border-radius: 8px;
+    color: var(--cor-terciary);
     cursor: pointer;
-    transition: .2s;
+    font-size: 1rem;
 }
 
-button:hover {
-    box-shadow: 0px 0px 20px rgb(250, 250, 245);
-    transform: scale(1.07);
+button:hover{
+    background-color: var(--cor-texto);
+    color: var(--cor-secondary2);
 }
 
-h2.titulo-temas {
-    color: #676f86;
-    font-size: 33px;
-    text-align: center;
-    margin-top: 10px;
-}
 
-h2.titulo-temas span {
-    color: #FF7629;
+/* Estilo do cabeçalho */
+header{
+    background-color: transparent;
+    padding: 16px 0;
+    position: fixed;
+    width: 100%;
+    background-image: linear-gradient(to left, var(--cor-secondary) 75%, var(--cor-primary) 25%);
+    z-index: 9999999;
 }
-
-.btn-voltar button {
-    padding: 10px 30px;
-    font-size: 18px;
-    font-weight: 600;
-    color: #ffffff;
-    background-color: #FF7629;
-    border: 0;
-    border-radius: 18px;
-    cursor: pointer;
-    transition: .2s;
-    margin-top: 20px;
-    top: 0;
-}
-
-/* ----------- Estilo do cabeçalho ----------------- */
-header {
-    background-color: #e0e0e0;
-    padding: 8px 4%;
-    
-}
-
-header .interface {
+header> .interface{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    font-size: 17px;
+    align-items: center;
 }
-
+header .logo-cabecalho img{
+    margin-top: 10px;
+    max-width: 550%;
+    height: 120px;
+}
 
 header .menu-desktop ul {
-    display: flex; 
-    gap: 40px;
-}
-
-header .menu-desktop {
-    flex-grow: 1;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    white-space: nowrap;
+       
 }
-
 header .menu-desktop ul li {
     display: inline-block;
 }
 
-
-header a {
-    color: #676f86;
+header .menu-desktop ul a {
+    color: var(--cor-texto);
     text-decoration: none;
-    display: inline-block;
+    font-size: 1.1rem;
+    display: inline-block;       /* necessário para o transform */
+    transition: transform 0.5s ease, color 0.3s ease;
+}
+
+header .menu-desktop ul a:hover {
+    color: var(--cor-primary);
+    transform: scale(1.2);       /* efeito de zoom suave */
+}
+
+header .menu-desktop ul li button{
+    padding: 0.5rem 1rem;
     font-weight: bold;
+    transition: all 0.5s ease;
+}
+header .menu-desktop ul li button:hover {
+    transform: scale(0.9);       /* zoom no botão */
 }
 
-header .menu-desktop a:hover {
-    color: #FF7629;
-    transform: scale(1.15);
-    transition: .5s;
-}
-
-header nav ul {
-    list-style-type: none;
-}
+/* Estilo Menu Mobile */
 
 
-
-/* ---------- Estilo menu Mobile ----------------- */
-
-.btn-abrir-menu i {
-    color: #FF7629;
-    font-size: 40px;
-    display: none;
-}
 
 .menu-mobile {
-    background-color: #676f86;
-    height: 100vh;
     position: fixed;
     top: 0;
-    right: 0;
-    z-index: 99999;
-    width: 0%;
-    transition: .3s;
-    overflow: hidden;
-    display: none;
-}
-
-.menu-mobile.abrir-menu {
-    width: 70%;
-}
-
-.menu-mobile.abrir-menu ~ .overlay-menu {
-    display: block;
-}
-
-.menu-mobile nav ul {
-    text-align: right;
-}
-
-.menu-mobile nav ul li a {
-    color: #fff;
-    font-size: 18px;
-    font-weight: 100;
-    padding: 10px 10%;
-    display: block;
-}
-
-.menu-mobile nav ul li a:hover {
-    background-color: #FF7629;
-    color: #676f86;
-}
-
-.overlay-menu {
-    background-color: #000000c5;
+    left: -100%; /* começa fora da tela */
     width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
+    height: 100vh;
+    background-color: var(--cor-secondary);
+    text-align: right;
+    padding: 32px 20px;
+    pointer-events: none;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.menu-mobile ul{
+    list-style: none;
+    padding: 34px 0;
+    
+}
+
+.menu-mobile ul li a{
+    color: var(--cor-primary);
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 22px;
+    display: block;
+    transition: .4s;
+    
+}
+.menu-mobile ul li a:hover{
+    background-color: var(--cor-primary);
+    color: var(--cor-link-hover);
+}
+
+.btn-menu-mobile i{
+    margin-top: 10px;
+    font-size: 2.2rem;
+    color: var(--cor-secondary); 
+    cursor: pointer;  
+}
+
+.menu-mobile .bi-x-circle {
+    font-size: 2.2rem;
+    color: var(--cor-primary);
+    cursor: pointer;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.menu-mobile.abrir-menu{
     left: 0;
-    z-index: 88888;
+    pointer-events: initial;
+
+}
+
+
+.btn-menu-mobile{
     display: none;
 }
 
-.menu-mobile .btn-fechar {
-    padding: 20px 8%;
-}
 
-.menu-mobile .btn-fechar i {
-    color: #FF7629;
-    font-size: 25px;
-}
 
-/* ----------------- Estilo do Topo do Site ---------------- */
-section.topo-do-site {
-    padding: 95px 5%;
-    height: 90vh;
+/* Estilo da hero */
+section.hero{
+    background-image: linear-gradient(to left, var(--cor-secondary) 75%, var(--cor-primary) 20%);
+    padding-top: 144px;
     
-    
-}
+} 
 
-section.topo-do-site .flex {
+.hero > .interface{
+    display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 40px;
-    
-}
-.topo-do-site {
-    background: url('./images/bg.jpg') no-repeat center center;
-    background-size: cover;
-    
-}
-.topo-do-site h1 {
-    color: #676f86;
-    font-size: 35px;
-    line-height: 10px;
+    gap: 150px;
+} 
+
+.hero .img-hero img{
+    height: 600px;
+    width: 420px;
+    display: block;
 }
 
-.topo-do-site .txt-topo-site h1 span {
-    color: #FF7629;
-    font-size: 40px;
+.hero .texto-hero h1{
+    color: var(--cor-texto);
+    font-size: 2.5rem;
+    font-weight: 300;
+    display: block;
 }
 
-.topo-do-site .txt-topo-site p {
-    color: #404657;
-    font-size: 20px;
+.hero .texto-hero h1 span{
+    color: var(--cor-primary);
+    font-weight: 400;
+}
+
+.hero .texto-hero p{
+    color: var(--cor-texto);
+    font-size: 1rem;
+    margin: 24px 0;
+    line-height: 1.5;
+}
+
+.hero .texto-hero button{
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.hero .texto-hero button:hover {
+    transform: scale(1.1);  
+}
+/* Estilo da seção "Sobre mim" */
+
+section.sobre-mim {
+    position: relative; /* necessário para o background */
+    padding: 80px 0;
+    height: 80vh;
+    background-image: url("../images/bg.jpg"); /* caminho da sua imagem */
+    background-size: cover;       /* cobre toda a área da seção */
+    background-position: center;  /* centraliza a imagem */
+    background-repeat: no-repeat; /* não repete a imagem */
+}
+
+.sobre-mim > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 75px;
+}
+
+.sobre-mim .txt-sobre p{
+    color: var(--cor-link-hover);
+    text-align: justify;
+    line-height: 1.6;
+    margin: 24px 0;
+
+}
+.sobre-mim .txt-sobre h2{
+    color: var(--cor-link-hover);
+}
+
+.sobre-mim .btn-redes {
     margin-top: 30px;
-    margin-bottom: 45px;
-    margin-right: 135px;
+    display: flex;
+    gap: 5px;
 }
 
-.topo-do-site .txt-topo-site p span {
-    color: #FF7629;
+.sobre-mim .btn-redes button {
+    background-color: var(--cor-primary2);
+    color: var(--cor-terciary);
+    border-radius: 20%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px; 
+    cursor: pointer;
+    transition: 0.3s;
+}
+.sobre-mim .btn-redes button:hover {
+    transform: scale(1.1);
+    
+    color:var(--cor-link-hover);
+
+}
+.img-sobre img {
+    max-width: 120%; /* nunca ultrapassa o container */
+    height: auto;    /* mantém proporção */
+}
+.tecnologias {
+    margin-top: 40px;
 }
 
-.topo-do-site .img-topo-site img {
-    width: 130%;
-    margin-right: 55px;
-    position: relative;
-    animation: flutuar 2.5s ease-in-out infinite alternate;
+.tecnologias h3 {
+    font-size: 1.5rem;
+    color: var(--cor-link-hover);
+    margin-bottom: 15px;
 }
 
-@keyframes flutuar {
-    0% {
-        top: 0;
-    }
-    100% {
-        top: 20px;
-    }
+.icones-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 2.2rem;
+    color: var(--cor-primary2);
 }
+
+.icones-tech i {
+    transition: transform 0.3s, color 0.3s;
+    cursor: default;
+}
+
+.icones-tech i:hover {
+    transform: scale(1.2);
+    color: var(--cor-link-hover);
+}
+
 
 /* -------- Estilo Especialidades ------- */
 
 section.especialidades {
-    padding:20px 4%;
-    height: 97vh;
+    padding:60px 0;
+    background-color: var(--cor-secondary);
+
     box-shadow: 0 0 30px #bebbbb;
+
 }
 
 section.especialidades .flex {
-    gap: 30px;
+    gap: 60px;
+    display: flex;
 }
 
 .especialidades .especialidades-box {
-    color: #676f86;
+    background-color: r;
+    color: #8e95ad;
     padding: 0px 4% 5%;
     border-radius: 20px;
     margin-top: 70px;
     transition: .5s;
+    text-align: justify;
+}
+
+.especialidades .especialidades-box .icon-especialidades {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 12px;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.especialidades .especialidades-box .icon-especialidades i{
+    font-size: 45px;
 }
 
 .especialidades .especialidades-box:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 30px #bebbbb;
+    box-shadow: 0 0 30px #484a69;
 }
 
 .especialidades .especialidades-box i {
     font-size: 65px;
-    color: #FF7629;
+    color: var(--cor-primary);
 }
 
 .especialidades .especialidades-box h3 {
-    font-size: 30px;
-    margin-top: 20px;
-    text-align: justify;
-}
-
-/* ----------- Estilo Sobre Mim  ----------- */
-section.sobre-mim {
-    padding: 20px 4%;
-    height: 98vh;
-    background-color:#e0e0e0;
-}
-
-section.sobre-mim .flex {
-    align-items: flex-start;
-    gap: 40px;
-    margin-top: 30PX;
-}
-
-.sobre-mim .txt-sobre {
-    color: #676f86;
-}
-
-.sobre-mim .txt-sobre h2 {
-    font-size: 25px;
-    line-height: 25px;
-    margin-bottom: 28px;
-}
-
-.sobre-mim .txt-sobre h2 span {
-    color: #FF7629;
-    display: block;
-}
-
-.sobre-mim .txt-sobre p {
-    margin: 20px 0;
-    font-size: 16px;
-    text-align: justify;
-    color: #676f86;
-}
-
-.btn-social button {
-    width: 45px;
-    height: 45px;
-    border-radius: 30px;
-    border: none;
-    background-color: #FF7629;
-    color: #ffffff;
     font-size: 20px;
+    margin-top: 2px;
+    text-align: justify;
+    color: var(--cor-primary);
+}
+
+.especialidades .especialidades-box p {
+    display: block;
+    line-height: 1.6;
+    margin-top: 14px;
+}
+
+.especialidades .btn-contato {
+    margin-top: 60px;
+    text-align: center;
+}
+.especialidades .btn-contato button {
+
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
     cursor: pointer;
-    margin: 0 5px;
-    transition: .3s;
+    transition: all 0.3s ease;
+}
+.especialidades .btn-contato button:hover {
+    transform: scale(1.1);  
 }
 
 /* -------Estilo Portifolio -----------*/
 section.portifolio {
-    padding: 15px 4%;
-    height: 98vh;
-    background-color:#e0e0e0;
+    position: relative; /* necessário para o background */
+    padding: 80px 0;
+    height: 80vh;
+    background-image: url("../images/bg.jpg"); /* caminho da sua imagem */
+    background-size: cover;       /* cobre toda a área da seção */
+    background-position: center;  /* centraliza a imagem */
+    background-repeat: no-repeat; /* não repete a imagem */
 }
 
 section.portifolio .flex{
     justify-content: space-around;
     margin-top: 56px;
+
+    display: flex;
 }
 
 .project-title {
@@ -384,7 +471,7 @@ section.portifolio .flex{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(36, 36, 1, 0.4);
+    background-color: rgba(36, 36, 1, 0.2);
     border-radius: 20px;
     border: 10px;
     display: flex;
@@ -407,141 +494,58 @@ section.portifolio .flex{
 }
 
 /* Estilo Footer */
-footer {
-    background-color: #cccbcb;
-    text-align: center;
-    padding: 30px 4%;
+footer{
+    background-color: var(--cor-secondary);
+    padding: 40px 0;
+    margin-top: 40px;
     
 }
 
-footer .top-footer button{
-    width:60; 
-
+footer .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    color: var(--cor-texto); 
 }
 
-footer .bottom-footer{
-    color: #1e2435;
-    font-size: 16px;
+footer .interface .logo-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-
-footer .line-footer {
-    padding: 10px 0;
-}
-
-.borda {
-    border-top: 4px solid #FF7629;
-}
-
-footer .line-footer p{
-    color: #FF7629;
-    font-size: 20px;
+footer .interface .logo-footer img{
+    max-width: 220px;
+    height: 80px;
 }
 
 
-/* --------Layout Responsivo ---------*/
-
-@media screen and (max-width: 964px) {
-    /* Classes Gerais */
-    .flex {
-        flex-direction: column;
-    }
-
-    .topo-do-site .flex {
-        flex-direction: column-reverse;
-    }
-
-    /* cabeçalho */
-    .menu-desktop, .btn-contato {
-        display: none;
-    }
-
-    /* Topo do site */
-    section.topo-do-site {
-        padding: 10px 8%;
-    }
-    .topo-do-site h1 {
-        font-size: 30px;
-        line-height: 30px;
-    }
-    .topo-do-site .img-topo-site img {
-        width: 100%;
-    }
-    section.topo-do-site .flex {
-        gap: 15px;
-    }
-
-    /* Especialidades */
-    section.especialidades {
-        padding: 10px 6%;
-    }
-    section.especialidades .flex {
-        gap: 6px;
-    }
-    h2.titulo-temas {
-        margin-top: 3rem;
-        font-size: 30px;
-        line-height: 40px;
-    }
-
-    /* Sobre mim */
-    section.sobre-mim {
-        padding: 20px 8%;
-    }
-    .sobre-mim .txt-sobre h2 {
-        font-size: 30px;
-        line-height: 35px;
-        text-align: center;
-    }
-    .btn-social {
-        text-align: center;
-    }
-    .img-sobre img {
-        width: 100%;
-    }
-
-    /* Portifolio */
-    section.portifolio {
-        padding: 30px 4%;
-    }
-    .img-port {
-        width: 100%;
-        max-width: 360px;
-        margin: 0 auto;
-    }
-    section.portifolio .flex {
-        gap: 40px;
-    }
-
-    /* Menu */
-    .btn-abrir-menu i {
-        display: block;
-    }
-    .menu-mobile {
-        display: block;
-    }
+.footer .btn-redes {
+    margin-top: 30px;
+    display: flex;
+    gap: 48px;
 }
 
-@media screen and (max-width: 964px) {
-    /* Ajustes adicionais para telas menores */
-    header .menu-desktop{
-        display: none;
-    }
-    section.topo-do-site {
-        height: auto;
-    }
-    section.especialidades {
-        height: auto;
-    }
-    section.sobre-mim {
-        height: auto;
-    }
-    section.portifolio {
-        height: auto;
-    }
 
-    .especialidades .especialidades-box {
-        padding: 40px;
-    }
+
+footer .btn-redes button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-color: #bebbbb;
+    font-size: 16px; /* ajusta o tamanho dos ícones */
+    background: var(--cor-secondary);
+    color: var(--cor-terciary); /* cor de fundo */
+
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+footer .btn-redes button:hover {
+    transform: scale(1.1);
+    background: var(--cor-terciary);
+    color: var(--cor-secondary);
+
 }
 
