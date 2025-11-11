@@ -1,14 +1,18 @@
 ### Olá, sou Haroldo Alcobaças 👋  
 ✨ [Meu Site](https://haroldoalcobacas.github.io/haroldoalcobacas/) ✨
 
-**Engenheiro de Software | Desenvolvedor Backend | Especialista em Gestão de Projetos**
-Com sólida experiência em **gestão de processos, qualidade e melhoria contínua**, aplico essa expertise no desenvolvimento de **soluções tecnológicas**, **automação de processos (RPA)** e **integração de sistemas**, entregando valor estratégico para empresas e clientes.
+Engenheiro de Software | Desenvolvedor Backend | Especialista em Gestão de Projetos
 
-**Meu diferencial:** unir visão estratégica de negócios, gestão de projetos, metodologias ágeis e excelência operacional à capacidade técnica para transformar processos complexos em soluções digitais ágeis, escaláveis e eficientes.
+Com sólida experiência em gestão de projetos, mapeamento de processos e melhoria contínua, aplico essa bagagem no desenvolvimento de soluções tecnológicas, automação de processos (RPA) e integração de sistemas, gerando valor estratégico para empresas e clientes.
 
-**Atuação:** desenvolvimento de sistemas web, automação de processos, dashboards analíticos e integração entre tecnologia e negócio. Focado em inovação, melhoria contínua e entrega de resultados mensuráveis.
+💡 Meu diferencial: unir visão estratégica de negócios, metodologias ágeis e excelência operacional à capacidade técnica para transformar processos complexos em soluções digitais ágeis, escaláveis e eficientes.
 
-🎯 **Visão profissional:** acredito no poder da tecnologia como ferramenta de transformação e estou sempre em busca de desafios que permitam aplicar meus conhecimentos, aprender continuamente e gerar impacto positivo para empresas e pessoas.
+🎯 Atuação: desenvolvimento de sistemas web, automação de processos, dashboards analíticos e integração entre tecnologia e negócio sempre com foco em inovação, melhoria contínua e resultados mensuráveis.
+
+<div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=haroldoalcobacas&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=haroldoalcobacas&layout=compact&langs_count=7&theme=dracula"/>
+</div>
 
 ## Linguagens e Tecnologias
 - **Linguagens & Frameworks:** Python, Django, PHP/Laravel, JavaScript, HTML, CSS  
@@ -16,15 +20,6 @@ Com sólida experiência em **gestão de processos, qualidade e melhoria contín
 - **Automação & RPA:** UiPath, Power Automate, PowerApps  
 - **Business Intelligence:** Power BI  
 - **Metodologias:** BPM, Scrum, Six Sigma, DMAIC  
-
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=haroldoalcobacas&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=haroldoalcobacas&layout=compact&langs_count=7&theme=dracula"/>
-</div>
-
----
-
-## Minhas Skills
 
 <div style="display: inline_block"><br>
   <img align="center" alt="Python" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
@@ -44,14 +39,13 @@ Com sólida experiência em **gestão de processos, qualidade e melhoria contín
   <img align="center" alt="CSS3" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
   
   <img align="center" alt="MySQL" height="50" width="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg">
-  
  <img align="center" alt="Docker" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg">
  <img align="center" alt="PostgreSQL" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg">
  <img align="center" alt="SQL" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg">
 
 </div>
 
----
+
 
 ## Contato
 
@@ -61,4 +55,5 @@ Com sólida experiência em **gestão de processos, qualidade e melhoria contín
 ---
 
 ![GitHub Snake animation](https://github.com/haroldoalcobacas/haroldoalcobacas/blob/output/github-contribution-grid-snake.svg)
+
 
