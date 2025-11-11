@@ -16,6 +16,6 @@ btnFecharMenu.addEventListener('click', () => {
 const linksMenu = menuMobile.querySelectorAll('ul li a');
 linksMenu.forEach(link => {
     link.addEventListener('click', () => {
-        menuMobile.classList.remove('abrir-menu');
+        menuMobile.classList.remove('abrir-menu'); 
     });
 });
