@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
 
     <title>Meu Portifólio</title>
 </head>
@@ -184,55 +187,72 @@
             
         </section>
             
+        <!-- ======= Seção Portfólio (troque seus .img-port existentes por este formato) ======= -->
         <section class="portifolio" id="portifolio">
-            <div class="interface">
-                <h1 class="titulo2-section">Meu <span>Portfólio.</span></h1>
+        <div class="interface">
+            <h1 class="titulo2-section">Meu <span>Portfólio</span></h1>
 
-                <div class="flex">
+            <div class="flex">
 
-                    <!-- Projeto 1 -->
-                    <div class="project">
-                        <p class="project-title">Sistema de Reservas</p>
-                        <p class="project-subtitle">Clique no Banner</p>
-                        <a href="https://reservaai.onrender.com/" target="_blank" class="img-link">
-                            <div class="img-port" style="background-image: url(images/banner1.png);">
-                                <div class="overlay">
-                                    <p>Clique para visualizar</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+            <!-- PROJETO 1 -->
+            <div class="project-card">
+                <div class="project-title">Sistema de Reservas</div>
+                <div class="project-subtitle">Python + Django + Tailwind</div>
 
-                    <!-- Projeto 2 -->
-                    <div class="project">
-                        <p class="project-title">Gestão de Projetos Kaizen</p>
-                        <p class="project-subtitle">Clique no Banner</p>
-                        <a href="" target="_blank" class="img-link">
-                            <div class="img-port" style="background-image: url(images/banner2.png);">
-                                <div class="overlay">
-                                    <p>Clique para visualizar</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                <!-- data-gallery = lista separada por vírgula (sem espaços obrigatórios) -->
+                <div class="img-port"
+                    data-gallery="images/proj1_1.png,images/proj1_2.png,images/proj1_4.png,images/proj1_5.png,images/proj1_6.png,images/proj1_7.png,images/proj1_8.png"
+                    style="background-image: url(images/banner1.png);">
+                <div class="overlay">Ver Mais</div>
+                </div>
+            </div>
 
-                    <!-- Projeto 3 -->
-                    <div class="project">
-                        <p class="project-title">Agendamento para Clínicas</p>
-                        <p class="project-subtitle">Clique no Banner</p>
-                        <a href="https://github.com/haroldoalcobacas/Agendamento" target="_blank" class="img-link">
-                            <div class="img-port" style="background-image: url(images/banner3.png);">
-                                <div class="overlay">
-                                    <p>Clique para visualizar</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+            <!-- PROJETO 2 -->
+            <div class="project-card">
+                <div class="project-title">Gestão de Projetos Kaizen</div>
+                <div class="project-subtitle">Python + Django + Tailwind</div>
 
-                </div><!--flex-->
+                <div class="img-port"
+                    data-gallery="images/proj2_1.png,images/proj2_3.png,images/proj2_4.png,images/proj2_5.png,,images/proj2_6.png,,images/proj2_7.png,images/proj2_8.png,images/proj2_9.png,images/proj2_11.png,images/proj2_12.png,images/proj2_15.png"
+                    style="background-image: url(images/banner2.png);">
+                <div class="overlay">Ver Mais</div>
+                </div>
+            </div>
 
-            </div><!--interface-->    
-        </section><!--portifolio-->
+            <!-- PROJETO 3 -->
+            <div class="project-card">
+                <div class="project-title">Sistema Agendamento para Clínicas</div>
+                <div class="project-subtitle">Python + Django + Bootstrap</div>
+
+                <div class="img-port"
+                    data-gallery="images/proj3_1.png,images/proj3_2.png"
+                    style="background-image: url(images/banner3.png);">
+                <div class="overlay">Ver Mais</div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        </section>
+
+        <!-- ======= Modal da Galeria: mantenha antes dos scripts ======= -->
+        <div class="modal-gallery" id="modalGallery">
+        <div class="modal-content">
+            <span class="close-modal" id="closeGallery">&times;</span>
+
+            <div class="swiper gallerySwiper">
+            <div class="swiper-wrapper" id="galleryContainer"></div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        </div>
+
+
+
+
 
     </main>
 
@@ -241,8 +261,8 @@
 
             <div class="logo-footer">
                 <img src="images/logo-.png" alt=" logo do site">
-                <h2>Vamos trabalhar juntos?</h2>
-                <p>Entre em contato comigo para discutirmos como posso ajudar a transformar suas ideias em soluções inovadoras.</p>
+                <h2>Pronto para transformar desafios em soluções?</h2>
+                <p>Fale comigo e encontraremos as melhores soluções para resolver seus problemas com eficiência e inovação.</p>
             
             </div>
             <div class="btn-redes">
@@ -257,7 +277,25 @@
 
         </div>
     </footer>
+    <!-- Modal da Galeria (Mova para cima) -->
+    <div class="modal-gallery" id="modalGallery">
+        <div class="modal-content">
+            <span class="close-modal" id="closeGallery">&times;</span>
+
+            <div class="swiper gallerySwiper">
+                <div class="swiper-wrapper" id="galleryContainer"></div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= SCRIPTS ======= -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="menu_mobile.js"></script>
+
     
 </body>
 </html>
