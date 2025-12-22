@@ -1,6 +1,6 @@
-<img width=100% botton=50px src="https://media.licdn.com/dms/image/v2/D4D16AQGVK3uOh3z2KQ/profile-displaybackgroundimage-shrink_350_1400/B4DZsTh96dJYAY-/0/1765559231055?e=1767830400&v=beta&t=5-YilqEOvzu6xWDort9uUtXH22IyDOD7GcaRVBV-094">
+<img width=100% botton=50px src="https://github.com/haroldoalcobacas/haroldoalcobacas/blob/main/images/BannerGit2.png">
 
-## Olá, sou Haroldo Alcobaças ✨ [Meu Portifólio](https://haroldoalcobacas.github.io/haroldoalcobacas/) ✨
+## Olá, sou Haroldo Alcobaças ✨ [Site Portifólio](https://haroldoalcobacas.github.io/haroldoalcobacas/) ✨
 ### Engenheiro de Software | Desenvolvedor Backend | Especialista em Gestão de Projetos
 ##
 Com sólida experiência em gestão de projetos, mapeamento de processos e melhoria contínua, aplico essa bagagem no desenvolvimento de soluções tecnológicas, automação de processos (RPA) e integração de sistemas, gerando valor estratégico para empresas e clientes.
@@ -48,9 +48,18 @@ Com sólida experiência em gestão de projetos, mapeamento de processos e melho
 
 
 ## Contato
+<p align="center">
+  <a href="mailto:haroldo.alcobacas@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+  <a href="https://www.linkedin.com/in/haroldoalcobacas/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  <a href="https://wa.me/5598987417135">
+    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
+  </a>
+</p>
 
-[![Gmail](https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white)](mailto:haroldo.alcobacas@gmail.com)  
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/haroldoalcobacas/)
 
 ---
 
