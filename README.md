@@ -1,9 +1,9 @@
 <img width=100% botton=50px src="https://github.com/haroldoalcobacas/haroldoalcobacas/blob/main/images/BannerGit2.png">
 
 ## Olá, sou Haroldo Alcobaças ✨ [Site Portifólio](https://haroldoalcobacas.github.io/haroldoalcobacas/) ✨
-### Engenheiro de Software | Desenvolvedor Backend | Especialista em Gestão de Projetos
+### Software Engineer & Product Owner | Back-End | RPA & Process Automation 
 ##
-Com sólida experiência em gestão de projetos, mapeamento de processos e melhoria contínua, aplico essa bagagem no desenvolvimento de soluções tecnológicas, automação de processos (RPA) e integração de sistemas, gerando valor estratégico para empresas e clientes.
+Engenheiro de Software com sólida experiência em gestão de processos e projetos. Com mais de 12 anos de atuação em qualidade e melhoria contínua, tenho aplicado nos últimos 3 anos esse conhecimento no desenvolvimento de soluções tecnológicas, automação de processos e integração de sistemas, gerando valor estratégico para empresas e clientes.
 
 💡 Meu diferencial: unir visão estratégica de negócios, metodologias ágeis e excelência operacional à capacidade técnica para transformar processos complexos em soluções digitais ágeis, escaláveis e eficientes.
 
@@ -57,6 +57,9 @@ Com sólida experiência em gestão de projetos, mapeamento de processos e melho
   </a>
   <a href="https://wa.me/5598987417135">
     <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
+  </a>
+  <a href="https://haroldoalcobacas.github.io/haroldoalcobacas/">
+    <img src="https://img.shields.io/badge/Portf%C3%B3lio-000000?style=for-the-badge&logo=google-chrome&logoColor=white"/>
   </a>
 </p>
 
