@@ -1,8 +1,8 @@
-### Olá, sou Haroldo Alcobaças 👋  
-✨ [Meu Portifólio](https://haroldoalcobacas.github.io/haroldoalcobacas/) ✨
+<img width=100% botton=50px src="https://media.licdn.com/dms/image/v2/D4D16AQGVK3uOh3z2KQ/profile-displaybackgroundimage-shrink_350_1400/B4DZsTh96dJYAY-/0/1765559231055?e=1767830400&v=beta&t=5-YilqEOvzu6xWDort9uUtXH22IyDOD7GcaRVBV-094">
 
-Engenheiro de Software | Desenvolvedor Backend | Especialista em Gestão de Projetos
-
+## Olá, sou Haroldo Alcobaças ✨ [Meu Portifólio](https://haroldoalcobacas.github.io/haroldoalcobacas/) ✨
+### Engenheiro de Software | Desenvolvedor Backend | Especialista em Gestão de Projetos
+##
 Com sólida experiência em gestão de projetos, mapeamento de processos e melhoria contínua, aplico essa bagagem no desenvolvimento de soluções tecnológicas, automação de processos (RPA) e integração de sistemas, gerando valor estratégico para empresas e clientes.
 
 💡 Meu diferencial: unir visão estratégica de negócios, metodologias ágeis e excelência operacional à capacidade técnica para transformar processos complexos em soluções digitais ágeis, escaláveis e eficientes.
@@ -10,8 +10,8 @@ Com sólida experiência em gestão de projetos, mapeamento de processos e melho
 🎯 Atuação: desenvolvimento de sistemas web, automação de processos, dashboards analíticos e integração entre tecnologia e negócio sempre com foco em inovação, melhoria contínua e resultados mensuráveis.
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=haroldoalcobacas&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=haroldoalcobacas&layout=compact&langs_count=7&theme=dracula"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=haroldoalcobacas&show_icons=true&theme=gruvbox&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=haroldoalcobacas&layout=compact&langs_count=7&theme=gruvbox"/>
 </div>
 
 ## Linguagens e Tecnologias
