@@ -1,0 +1,274 @@
+@media (max-width: 1020px) {
+
+    #site-header header {
+        background-image: none;
+        background-color: var(--cor-primary);
+    }
+
+    header .logo-cabecalho img{
+    margin-top: 10px;
+    max-width: 210px;
+    height: 75px;
+    }
+
+    
+   /* -------- menu mobile -------- */
+
+    /* Mostra botão do menu mobile */
+    .btn-menu-mobile {
+        display: block;
+        position: relative;
+        z-index: 1900;
+    }
+
+    /* Ajuste do ícone */
+    .btn-menu-mobile i {
+        font-size: 2.2rem;
+        color: var(--cor-secondary);
+    }
+
+    /* Esconde menu desktop */
+    .menu-desktop {
+        display: none;
+    }
+
+    /* Submenu de Cases no Menu Mobile */
+    .menu-mobile-cases {
+        margin-top: 20px;
+        padding-top: 15px;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .menu-mobile-title {
+        display: block;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: var(--cor-secondary);
+        margin-bottom: 10px;
+    }
+
+    .menu-mobile-cases ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu-mobile-cases li a {
+        display: block;
+        padding: 10px 0;
+        font-size: 0.9rem;
+        color: #fff;
+        text-decoration: none;
+        opacity: 0.9;
+    }
+
+    .menu-mobile-cases li a:hover {
+        opacity: 1;
+        color: var(--cor-secondary);
+    }
+
+    .case-shortcuts .container-nav {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .case-shortcuts a {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+
+    #submenu-cases {
+        display: none;
+    }
+    .container-nav {
+        gap: 10px;
+        overflow-x: auto;
+        padding: 0 15px;
+        justify-content: flex-start;
+    }
+    .case-shortcuts a {
+        padding: 8px 18px;
+        font-size: 0.75rem;
+        flex-shrink: 0;
+    }
+
+
+    /* Estilo da hero */
+    section.hero{
+        background-image: linear-gradient(to top, var(--cor-secondary) 90%, var(--cor-primary) 10%);
+        padding-top: 170px;
+        
+    } 
+
+    .hero > .interface{
+        text-align: center;
+        gap: 50px;
+        flex-direction: column-reverse;
+    } 
+
+    .hero .img-hero img{
+        height: 400px;
+        width: 280px;
+        display: block;
+    }
+
+    .hero .texto-hero h1{
+        color: var(--cor-texto);
+        font-size: 1.5rem;
+        font-weight: 200;
+        display: block;
+    }
+
+    .hero .texto-hero h1 span{
+        color: var(--cor-primary);
+        font-weight: 400;
+    }
+
+    .hero .texto-hero p{
+        color: var(--cor-texto);
+        font-size: 1rem;
+        margin: 28px 0;
+        line-height: 1.8;
+    }
+
+    .hero .texto-hero button{
+        margin-top: 22px;
+        padding: 14px 24px;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }   
+
+    /* Estilo da seção "Sobre mim" */
+
+    .sobre-topo {
+        flex-direction: column;
+        align-items: center;
+        text-align: left
+    }
+
+    .txt-sobre {
+        max-width: 100%;
+    }
+
+    .foto-coluna {
+        margin-top: 40px;
+    }
+
+
+    /* -------- Estilo Especialidades ------- */
+
+
+    section.especialidades .flex {
+        gap: 60px;
+        display: block;
+        text-align: center;
+        
+        
+    }
+
+    /* -------Estilo Portifolio -----------*/
+
+    section.portifolio {
+        padding:30px 0;
+        background-color:#e0e0e0;
+        height: auto;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.portifolio .flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        
+    }
+
+    .project-title {
+        font-weight: 600;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 1.2em;
+        color: #676f86;
+        position: relative;
+        cursor: default;
+        transition: color 0.3s;
+    }   
+
+
+    /*   cta section   */
+    .cta-section {
+        padding: 60px 20px;
+    }
+
+    .cta-button {
+        display: block;          
+        width: 100%;             
+        max-width: 320px;        
+        margin: 25px auto 0;
+        padding: 16px 20px;
+        font-size: 1rem;
+    }
+
+
+
+    /* Estilo do Footer */
+
+    footer {
+        padding: 32px 0;
+    }
+
+    footer .interface {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    footer .interface .logo-footer img {
+        width: 220px;     /* FORÇA tamanho */
+        max-width: 180px;
+        height: auto;
+    }
+
+    footer .btn-redes {
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    footer .btn-redes button {
+        width: 43px;
+        height: 43px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        line-height: 3;
+    }
+
+
+
+    @media (max-width: 480px) {
+
+        footer .logo-footer img {
+            max-width: 100px;
+        }
+
+        footer .btn-redes button {
+            width: 32px;
+            height: 32px;
+            font-size: 14px;
+        }
+
+
+
+
+
+}

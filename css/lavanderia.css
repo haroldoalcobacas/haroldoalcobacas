@@ -1,0 +1,271 @@
+/* ==========================================================================
+   1. VARIÁVEIS E CONFIGURAÇÕES GLOBAIS
+   ========================================================================== */
+:root {
+    /* Cores do Header da Index */
+    --cor-primary: #fbca2d;
+     --cor-primary2:#e0ae0a;
+    --cor-secondary: #17043b;
+    --cor-texto: #fcfbfb;
+
+    /* Cores do Case Lavanderia */
+    --primary: #6366f1;
+    --accent: #a5b4fc;
+    --bg: #f8fafc;
+    --surface: #ffffff;
+    --text-main: #17043b;
+    --text-dim: #43377e;
+    --border-light: #e2e8f0;
+    --shadow-light: rgba(100, 116, 139, 0.08);
+    --gradient-overlay: linear-gradient(0deg, var(--bg) 0%, rgba(248, 250, 252, 0.4) 50%, var(--bg) 100%);
+   
+    --cor-link: #0066CC;
+    --cor-link-hover: #004999;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text-main);
+    font-family: 'Urbanist', sans-serif;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+
+/* ==========================================================================
+   3. HERO COM IMAGEM E OVERLAY (AJUSTADO)
+   ========================================================================== */
+.case-hero {
+    min-height: 95vh;
+    padding-top: 180px; /* Espaço para Header + Barra de Atalhos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    background-color: #000; /* Fundo reserva */
+    
+    /* Imagem de Fundo Fake - Substitua por ../images/hero-lavanderia.jpg */
+    background-image: url('../images/case1_img1.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.case-hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to bottom, rgba(23, 4, 59, 0.9), rgba(23, 4, 59, 0.6));
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    padding: 0 20px;
+}
+
+.case-hero h1 {
+    font-size: clamp(2.1rem, 7vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.case-hero p {
+    color: #e2e8f0;
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.label {
+    color: var(--cor-primary2); /* Amarelo da index para destaque */
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* ==========================================================================
+   4. ESTRUTURA, GRIDS E CORREÇÃO DE ESPAÇOS
+   ========================================================================== */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 80px 0; /* Reduzido para evitar vácuos */
+}
+
+/* Classe para remover o espaço inferior e "colar" na próxima sessão/parallax */
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+    font-weight: 800;
+    color: var(--text-dim);
+}
+
+.section-header h3 {
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    font-weight: 800;
+    color: var(--text-dim);
+    text-align: left;
+}
+
+.section-text {
+    font-size: 1.15rem;
+    color: var(--text-dim);
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: left;
+    text-align: justify;
+}
+
+.text-left {
+    text-align: left;
+    text-align: justify;
+}
+.section-text.text-left.observacao {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--text-dim);
+    margin-top: -10px;
+}
+/* Feature Cards */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    color: var(--text-dim);
+}
+
+.feature-card {
+    background: var(--surface);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid var(--border-light);
+    box-shadow: 0 10px 30px var(--shadow-light);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(99, 102, 241, 0.1);
+}
+
+.feature-card .icon {
+    font-size: 2.8rem;
+    color: var(--cor-primary2);
+    margin-bottom: 25px;
+    display: block;
+}
+
+/* ==========================================================================
+   5. IMAGENS E PARALLAX (SEM VÁCUOS)
+   ========================================================================== */
+.inline-image {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 40px auto 20px;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.parallax-window {
+    
+    height: 30vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    margin: 0; /* Garante que não haja espaço externo */
+}
+
+.parallax-window::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(23, 4, 59, 0.4), rgba(23, 4, 59, 0.4));
+}
+
+/* Imagens de Fundo (Substituir pelos arquivos em ../images/) */
+.problem-bg { background-image: url('../images/case1_img2.png'); }
+.solution-bg { background-image: url('../images/case1_img2.png'); }
+
+/* ==========================================================================
+   6. CTA, FOOTER E SCROLL
+   ========================================================================== */
+.cta-section {
+    background: var(--cor-texto);
+    color: var(--text-main);
+    text-align: center;
+    padding: 80px 20px;
+    margin-top: 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--cor-primary);
+    color: var(--cor-secondary);
+    padding: 18px 45px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 30px;
+    transition: 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(251, 202, 45, 0.3);
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 55px;
+    height: 55px;
+    background: var(--cor-primary);
+    color: var(--cor-secondary);
+    border: none;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10001;
+    font-size: 1.2rem;
+}
+

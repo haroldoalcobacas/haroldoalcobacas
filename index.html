@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsivo.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
@@ -17,41 +18,8 @@
     <title>Meu Portifólio</title>
 </head>
 <body>
-    <header>
-        <div class="interface">
-
-            <section class="logo-cabecalho">
-                <img src="images/logo.png" alt="Logo do site">            
-            </section>
-
-            <nav class="menu-desktop">
-                <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre-mim">Sobre mim</a></li>
-                    <li><a href="#especialidades">Especialidades</a></li>
-                    <li><a href="#portifolio">Projetos</a></li>
-                    <li><a href="https://web.whatsapp.com/send?phone=5598987417135" target="_blank"><button>Contato</button></a></li>
-                </ul>
-            </nav>
-            
-            <!-- Botão abrir menu mobile -->
-            <div class="btn-menu-mobile" id="btn-menu-mobile">
-            <i class="bi bi-list"></i>
-            </div>
-
-            <nav class="menu-mobile" id="menu-mobile">
-                <i class="bi bi-x-circle" id="btn-fechar-menu"></i>
-                <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre-mim">Sobre mim</a></li>
-                    <li><a href="#especialidades">Especialidades</a></li>
-                    <li><a href="#portifolio">Projetos</a></li>
-                    <li><a href="https://web.whatsapp.com/send?phone=5598987417135" target="_blank">Contato</a></li>
-                </ul>
-            </nav>
-
-        </div>
-    </header>
+    <div id="site-header"></div>
+    <script src="js/include.js"></script>
 
     <main>
         <section class="hero" id="inicio">
@@ -75,20 +43,105 @@
 
         <section class="sobre-mim" id="sobre-mim">
             <div class="interface">
+                <h1 class="titulo2-section">Sobre <span>Mim</span></h1>
+                <!-- BLOCO 1: TEXTO + IMAGEM -->
+                <div class="sobre-topo">
 
-                <div class="txt-sobre">
-                    <h1 class="titulo2-section">Sobre <span>Mim</span></h1>
+                    <!-- TEXTO -->
+                    <div class="txt-sobre">
+                        
+                        
+                        <h2>Muito prazer, <span>sou Haroldo Alcobaças</span></h2>
 
-                    <h2>Muito prazer, <span>sou Haroldo Alcobaças</span></h2>
+                        <p><strong>Technical Product Manager | Engenheiro de Software | Desenvolvedor Backend | Especialista em Processos</strong></p>
 
-                    <p><strong>Engenheiro de Software | Desenvolvedor Backend | Especialista em Gestão de Projetos</strong></p>
+                        <p>
+                            Sou <strong>Engenheiro de Software e Technical Product Manager</strong>, com mais de 
+                            <strong>12 anos de experiência na liderança de projetos estratégicos</strong>, gestão de equipes,
+                            consultoria, mapeamento de processos e melhoria contínua.
+                        </p>
 
-                    <p>Com sólida experiência em <strong>gestão de projetos, mapeamento de processos e melhoria contínua</strong>, aplico essa bagagem no desenvolvimento de <strong>soluções tecnológicas</strong>, <strong>automação de processos (RPA)</strong> e <strong>integração de sistemas</strong>, gerando valor estratégico para empresas e clientes.</p>
+                        <p>
+                            🎯 <strong>Atuação:</strong> Trabalho na interseção entre 
+                            <strong>negócio, tecnologia e dados</strong>, liderando iniciativas de automação,
+                            digitalização e desenvolvimento de sistemas que geram 
+                            <strong>valor mensurável e retorno sobre investimento</strong>. 
+                            Tenho histórico na entrega de projetos de alto impacto, com 
+                            <strong>ganhos financeiros potenciais de R$ 30MM</strong>, por meio de otimização operacional,
+                            Lean Six Sigma, transformação digital e melhoria contínua.
+                        </p>
 
-                    <p>💡 <strong>Meu diferencial:</strong> unir visão estratégica de negócios, metodologias ágeis e excelência operacional à capacidade técnica para transformar processos complexos em soluções digitais ágeis, escaláveis e eficientes.</p>
+                        <p>
+                            💡 <strong>Meu diferencial:</strong> Estruturar problemas complexos,
+                            <strong>priorizar soluções com foco em ROI</strong> e conduzir projetos ponta a ponta,
+                            utilizando <strong>metodologias ágeis</strong> e uma base técnica em desenvolvimento de sistemas,
+                            automação e análise de dados.
+                        </p>
+                    </div>
 
-                    <p>🎯 <strong>Atuação:</strong> desenvolvimento de sistemas web, automação de processos, dashboards analíticos e integração entre tecnologia e negócio sempre com foco em inovação, melhoria contínua e resultados mensuráveis.</p>
+                    <!-- IMAGEM + AÇÕES -->
+                    <div class="sobre-meio">
 
+                        <div class="img-sobre">
+                            <img src="images/sobre-mim.png" alt="Foto Haroldo Alcobaças">
+                        </div>
+
+                        <div class="sobre-acoes">
+                            <h3>Vamos conversar</h3>
+                            <div class="btn-redes">
+                                <a href="https://web.whatsapp.com/send?phone=5598987417135" target="_blank">
+                                    <button><i class="bi bi-whatsapp"></i></button>
+                                </a>
+                                <a href="https://www.linkedin.com/in/haroldoalcobacas/" target="_blank">
+                                    <button><i class="bi bi-linkedin"></i></button>
+                                </a>
+                                <a href="https://github.com/haroldoalcobacas" target="_blank">
+                                    <button><i class="bi bi-github"></i></button>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- BLOCO 2: BASE FULL WIDTH -->
+                <div class="sobre-base">
+
+                    <div class="metodologias">
+                        <h3><span>Metodologias & Produto</span></h3>
+
+                        <div class="metodos-cards">
+                            <div class="metodo-card">
+                                <i class="bi bi-diagram-3"></i>
+                                <span>Lean Six Sigma (DMAIC)</span>
+                            </div>
+
+                            <div class="metodo-card">
+                                <i class="bi bi-arrow-repeat"></i>
+                                <span>PDCA & Melhoria Contínua</span>
+                            </div>
+
+                            <div class="metodo-card">
+                                <i class="bi bi-kanban"></i>
+                                <span>Scrum & Kanban</span>
+                            </div>
+
+                            <div class="metodo-card">
+                                <i class="bi bi-lightbulb"></i>
+                                <span>Product Discovery</span>
+                            </div>
+
+                            <div class="metodo-card">
+                                <i class="bi bi-graph-up-arrow"></i>
+                                <span>Gestão orientada a ROI</span>
+                            </div>
+
+                            <div class="metodo-card">
+                                <i class="bi bi-briefcase"></i>
+                                <span>Gestão de Projetos</span>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="tecnologias">
                         <h3><span> Tecnologias</span></h3>
@@ -113,22 +166,6 @@
                             <img align="center" alt="SQL" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg">
                         </div>
                     </div>
-
-                    <div class="btn-redes">
-                        <a href="https://web.whatsapp.com/send?phone=5598987417135" target="_blank">
-                            <button><i class="bi bi-whatsapp"></i></button>
-                        </a>
-                        <a href="https://www.linkedin.com/in/haroldoalcobacas/" target="_blank">
-                            <button><i class="bi bi-linkedin"></i></button>
-                        </a>
-                        <a href="https://github.com/haroldoalcobacas" target="_blank">
-                            <button><i class="bi bi-github"></i></button>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="img-sobre">
-                    <img src="images/sobre-mim.png" alt="Foto Haroldo Alcobaças">
                 </div>
 
             </div>
@@ -141,26 +178,25 @@
                 <div class="flex">
 
                     <div class="especialidades-box">
-                        <div class="icon-especialidades" alt="icone">
-                            <i class="bi bi-code-square"></i>
-                            <h3>Desenvolvimento Backend/Frontend</h3>
+                        <div class="icon-especialidades" alt="icone"> 
+                            <i class="bi bi-map"></i>
+                            <h3>Product Management (PM)</h3>
                         </div>
                         <p>
-                        Atualmente, dedico grande parte do meu tempo ao desenvolvimento de projetos web, utilizando PHP/Laravel, JavaScript, Python e Django. Tenho foco em soluções backend eficientes, sempre buscando resolver desafios reais do dia a dia e aprimorar minhas habilidades técnicas.
+                        Atuo na gestão de produtos e projetos digitais com foco em discovery, definição de métricas e tomada de decisão orientada a dados. Conduzo iniciativas desde a estruturação do problema até a entrega, aplicando práticas de Product Thinking, priorização por impacto e alinhamento contínuo com stakeholders para gerar valor real ao negócio..
                         </p>
 
                     </div><!--especialidades-box-->
 
                     <div class="especialidades-box">
                         <div class="icon-especialidades" alt="icone">
-                            <i class="bi bi-robot"></i>
-                            <h3>Automação RPA</h3>
-                        </div>                        
-
+                            <i class="bi bi-code-square"></i>
+                            <h3>Desenvolvimento Web</h3>
+                            <h3>(Backend & Frontend)</h3>
+                        </div>
                         <p>
-                        Tenho experiência em automação de processos utilizando Power Automate, UiPath e Python. Aplicando RPA, desenvolvo soluções para automatizar relatórios, rotinas repetitivas e integrar processos com projetos de análise de dados, otimizando tempo e aumentando a eficiência operacional.
+                        Desenvolvo aplicações web utilizando PHP/Laravel, Python/Djando e Vue.js, com foco em soluções eficientes, escaláveis e alinhadas aos objetivos do produto. Essa vivência técnica me permite conectar estratégia e execução, garantindo viabilidade, qualidade e entregas consistentes.
                         </p>
-
                     </div><!--especialidades-box-->
 
                     <div class="especialidades-box">
@@ -170,7 +206,7 @@
                         </div>                       
 
                         <p>
-                        Com mais de 3 anos de experiência em análise de dados, utilizo ferramentas como Power BI para transformar informações em insights estratégicos. Atuo no desenvolvimento de dashboards claros e eficientes e na gestão de projetos de análise, auxiliando na tomada de decisões assertivas.
+                        Atuo na análise de dados e desenvolvimento de dashboards estratégicos, utilizando Power BI para transformar dados em insights acionáveis. Trabalho com definição de métricas, acompanhamento de indicadores e análise de desempenho, apoiando decisões estratégicas e a evolução contínua dos produtos..
                         </p>
                     </div><!--especialidades-box-->
                     
@@ -190,68 +226,94 @@
         <!-- ======= Seção Portfólio ======= -->
         <section class="portifolio" id="portifolio">
             <div class="interface">
-                <h1 class="titulo2-section">Meu <span>Portfólio</span></h1>
+                <h1 class="titulo2-section">Meus <span>Projetos</span></h1>
 
                 <div class="flex">
 
                     <!-- PROJETO 1 -->
                     <div class="project-card">
-                        <div class="project-title">Sistema de Reservas</div>
-                        <div class="project-subtitle">Full stack: Python + Django + Tailwind</div>
 
-                        <!-- data-gallery-->
                         <div class="img-port"
-                            data-gallery="images/proj1_1.png,images/proj1_2.png,images/proj1_4.png,images/proj1_5.png,images/proj1_6.png,images/proj1_7.png,images/proj1_8.png"
-                            style="background-image: url(images/banner1.png);">
-                        <div class="overlay">Ver Mais</div>
+                            data-gallery="images/proj4_1.png,images/proj4_3.png,images/proj4_4.png"
+                            style="background-image: url(images/banner4.png);">
+                            <div class="overlay">Ver Imagens</div>
                         </div>
+                        <div class="project-info">
+
+                            <div class="project-title">Dashboard para Gestão Operacional </div>
+                            <div class="project-subtitle">Produto de Dados • Power BI</div>
+
+                            <a href="cases/lavanderia.html" class="btn-case">
+                                Ver Case →
+                            </a>                        
+
+                        </div>
+
                     </div>
 
                     <!-- PROJETO 2 -->
                     <div class="project-card">
-                        <div class="project-title">Gestão de Projetos Kaizen</div>
-                        <div class="project-subtitle">Full stack:Python + Django + Tailwind</div>
-
                         <div class="img-port"
-                            data-gallery="images/proj2_1.png,images/proj2_3.png,images/proj2_4.png,images/proj2_5.png,images/proj2_8.png,images/proj2_9.png,images/proj2_12.png,images/proj2_14.png"
-                            style="background-image: url(images/banner2.png);">
-                            <div class="overlay">Ver Mais</div>
+                            data-gallery="images/proj1_1.png,images/proj1_2.png,images/proj1_4.png,images/proj1_5.png,images/proj1_6.png,images/proj1_7.png"
+                            style="background-image: url(images/banner1.png);">
+                            <div class="overlay">Ver Imagens</div>
+                        </div>
+                        
+                        <div class="project-info">
+                            <div class="project-title">Sistema de Reservas</div>
+                            <div class="project-subtitle">Full stack: Python + Django + Tailwind</div>
+
                         </div>
                     </div>
 
                     <!-- PROJETO 3 -->
                     <div class="project-card">
-                        <div class="project-title">Sistema Agendamento para Clínicas</div>
-                        <div class="project-subtitle">Full stack: Python + Django + Bootstrap</div>
+                        <div class="img-port"
+                            data-gallery="images/proj2_1.png,images/proj2_3.png,images/proj2_4.png,images/proj2_5.png,images/proj2_8.png,images/proj2_9.png,images/proj2_12.png,images/proj2_14.png"
+                            style="background-image: url(images/banner2.png);">
+                            <div class="overlay">Ver Imagens</div>
+                        </div>
+
+                        <div class="project-info">
+
+                            <div class="project-title">Gestão de Projetos Kaizen</div>
+                            <div class="project-subtitle">Full stack:Python + Django + Tailwind</div>
+
+                        </div>
+                    </div>
+
+                    <!-- PROJETO 4 -->                    
+                    <div class="project-card">
 
                         <div class="img-port"
                             data-gallery=""
                             style="background-image: url(images/banner3.png);">
-                            <div class="overlay">Ver Mais</div>
+                            <div class="overlay">Ver Imagens</div>
+                        </div>
+
+                        <div class="project-info">
+
+                            <div class="project-title">Sistema Agendamento para Clínicas</div>
+                            <div class="project-subtitle">Full stack: Python + Django + Bootstrap</div>
+
                         </div>
                     </div>
 
-                    <!-- PROJETO 4 -->
-                    <div class="project-card">
-                        <div class="project-title">Dashboard Gestão Lavanderia</div>
-                        <div class="project-subtitle">Power BI</div>
-
-                        <div class="img-port"
-                            data-gallery="images/proj4_1.png,images/proj4_2.png,images/proj4_3.png,images/proj4_4.png"
-                            style="background-image: url(images/banner4.png);">
-                            <div class="overlay">Ver Mais</div>
-                        </div>
-                    </div>
 
                     <!-- PROJETO 5 -->
                     <div class="project-card">
-                        <div class="project-title">Site Banda de Rock</div>
-                        <div class="project-subtitle">Python + Django + Tailwind + VUE JS</div>
 
                         <div class="img-port"
                             data-gallery=""
                             style="background-image: url(images/banner5.png);">
-                            <div class="overlay">Ver Mais</div>
+                            <div class="overlay">Ver Imagens</div>
+                        </div>
+
+                        <div class="project-info">
+                            <div class="project-title">Site Banda de Rock</div>
+                            <div class="project-subtitle">Python + Django + Tailwind + VUE JS</div>
+
+
                         </div>
                     </div>
 
@@ -277,32 +339,20 @@
 
     </main>
 
-    <footer id="contato">
-        <div class="interface">
-
-            <div class="logo-footer">
-                <img src="images/logo-.png" alt=" logo do site">
-                <h2>Pronto para transformar desafios em soluções?</h2>
-                <p>Fale comigo e encontraremos as melhores soluções para resolver seus problemas com eficiência e inovação.</p>
-            
-            </div>
-            <div class="btn-redes">
-                <a href="https://web.whatsapp.com/send?phone=5598987417135" target="_blank"><button><i class="bi bi-whatsapp"></i></button>
-                </a>
-                <a href="https://www.linkedin.com/in/haroldoalcobacas/" target="_blank"><button><i class="bi bi-linkedin"></i></button>
-                </a>
-                <a href="https://github.com/haroldoalcobacas" target="_blank"><button><i class="bi bi-github"></i></button>
-                </a>
-            </div>
-
-
-        </div>
-    </footer>
+<div id="footer"></div>
+<script src="js/include.js"></script>
+<script>
+  fetch('componentes/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+    });
+</script>
 
     <!-- Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./menu_mobile.js" defer></script>
-    <script src="./gallery.js" defer></script>
+    <script src="./js/menu_mobile.js" defer></script>
+    <script src="./js/gallery.js" defer></script>
 
 
 </body>

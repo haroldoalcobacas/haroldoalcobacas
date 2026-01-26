@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestão de Custo</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&family=Urbanist:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/case2.css" />
+    <link rel="stylesheet" href="../responsivo.css" />
+</head>
+<body class="page-case">
+
+    <div id="site-header"></div>
+
+    <div id="submenu-cases"></div>
+
+    <main>
+        <section class="case-hero" id="top">
+            <div class="hero-content">
+                <span class="label">Frente de Produtividade – Case de Gestão Orientada a Valor(2024)</span>
+
+                <h1>
+                    Estruturação de um Modelo de Governança e Redução de Custos
+                    em uma Grande Operação Industrial
+                </h1>
+
+                <p>
+                    De iniciativas dispersas a decisões executivas orientadas por valor
+                    governança, dados e produtos digitais aplicados à tomada
+                    de decisão executiva.
+                </p>
+            </div>
+        </section>
+
+        <section class="pb-0">
+            <div class="container">
+                <div class="section-header">
+                    <span class="label">O Contexto e Descrição do Problema</span>
+
+                    <h2>O Desafio: Reduzir Custos sem Visão Integrada em uma Operação Complexa</h2>
+
+                    <h3 class="section-text">Aplicação do Case</h3>
+                    <p class="section-text">
+                        Este case foi desenvolvido em uma multinacional do setor de mineração, em um complexo de minas em Minas Gerais, em um cenário de queda no preço do minério e forte pressão por eficiência operacional.
+                    </p>
+
+                    <h3 class="section-text">Contexto</h3>
+                    <p class="section-text">
+                        A operação era altamente complexa, composta por múltiplas frentes de custo, obras, manutenção, pessoas, equipamentos e contratos, distribuídas entre diferentes unidades e diretorias.
+                    </p>
+
+                    <p class="section-text">
+                        Apesar da existência de diversas iniciativas de redução de custos, a organização não possuía uma visão integrada, nem um modelo claro para priorizar esforços ou mensurar impacto financeiro real ao longo do tempo.
+                    </p>
+
+                    <p class="section-text">
+                        A liderança geral do corredor necessitava de visibilidade para identificar os principais ofensores de custo, mensurar o impacto real das iniciativas e acompanhar os resultados de forma consistente ao longo do tempo.
+                    </p>
+
+                    <p class="section-text">
+                        O desafio principal não era apenas reduzir custos, mas estruturar um modelo de governança orientado a dados, capaz de conectar iniciativas, execução e tomada de decisão executiva.
+                    </p>
+
+                    <h3 class="section-text">Principais Problemas Observados</h3>
+                </div>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-project-diagram icon"></i>
+                        <h3>Iniciativas Desconectadas</h3>
+                        <p>Ações de redução de custos sem integração, visão consolidada ou alinhamento entre áreas.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-database icon"></i>
+                        <h3>Dados Fragmentados</h3>
+                        <p>Informações espalhadas em planilhas, metodologias diferentes de gestão e sistemas que não se conversavam.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-chart-line icon"></i>
+                        <h3>Baixa Visibilidade Financeira</h3>
+                        <p>Dificuldade para identificar ofensores de custo e mensurar impacto financeiro real, atual e futuro.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-sitemap icon"></i>
+                        <h3>Falta de Governança</h3>
+                        <p>Ausência de papéis claros, rituais de acompanhamento e critérios de priorização.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-tasks icon"></i>
+                        <h3>Dificuldade de Priorização</h3>
+                        <p>Iniciativas concorrendo por recursos sem critérios objetivos de valor.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-clock icon"></i>
+                        <h3>Resposta Lenta</h3>
+                        <p>Decisões baseadas em análises pontuais, relatórios reativos e desconectados.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="parallax-window problem-bg"></div>
+    
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <span class="label">Discovery & Estruturação</span>
+
+                    <h2>Construção da Frente de Produtividade Orientada a Dados</h2>
+
+                    <p class="section-text">
+                        A primeira etapa do projeto foi a condução de um discovery estruturado, com foco em identificar os principais ofensores de custo e criar uma base sólida para tomada de decisão.
+                    </p>
+
+                    <p class="section-text">
+                        As despesas foram analisadas por meio de uma Curva ABC e organizadas em clusters de custo, como obras, manutenção, pessoal, equipamentos e contratos. Cada cluster passou a ter um diretor responsável, atuando como Product Owner (PO) da frente.
+                    </p>
+
+                    <p class="section-text">
+                        Abaixo dos POs, foram definidos pontos focais, líderes responsáveis pela consolidação, gestão e evolução das iniciativas. Os times foram formados de maneira multidisciplinar e orientada pelo percentual de consumo, reunindo especialistas de diferentes unidades e áreas.
+                    </p>
+
+                    <p class="section-text">
+                        Com a estrutura validada pela liderança, iniciaram-se sessões colaborativas de ideação para mapear iniciativas existentes e identificar novas oportunidades de redução de custos com impacto no curto e médio prazo.
+                    </p>
+                    <h3 class="section-text">Principais entregas do Discovery:</h3>
+                </div>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-chart-pie icon"></i>
+                        <h3>Análise por Curva ABC</h3>
+                        <p>Identificação dos principais ofensores de custo e foco nas maiores alavancas de impacto.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-sitemap icon"></i>
+                        <h3>Governança por Clusters</h3>
+                        <p>Diretores como POs e pontos focais responsáveis pela gestão das iniciativas.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-users-cog icon"></i>
+                        <h3>Times Multidisciplinares</h3>
+                        <p>Equipes formadas com base no consumo real, envolvendo diferentes unidades.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-lightbulb icon"></i>
+                        <h3>Ideação Estruturada</h3>
+                        <p>Mapeamento de iniciativas existentes e geração de novas oportunidades.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="parallax-window problem-bg"></div>
+
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <span class="label">Metodologia & Ferramentas</span>
+
+                    <h2>Modelo de Execução Orientado a Valor e Governança</h2>
+
+                    <p class="section-text">
+                        Após o discovery e a estruturação da frente de produtividade, foi definido um modelo de execução focado em priorização, disciplina operacional e acompanhamento contínuo dos resultados.
+                    </p>
+
+                    <p class="section-text">
+                        A metodologia combinou práticas de análise de dados, gestão de iniciativas e rituais de governança, garantindo alinhamento entre times operacionais, liderança e diretoria executiva.
+                    </p>
+                    <h3 class="section-text">Principais Componentes da Metodologia:</h3>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-lightbulb icon"></i>
+                        <h3>Sessões de Ideação</h3>
+                        <p>Workshops colaborativos para mapeamento de iniciativas existentes e geração de novas oportunidades.</p>
+                    </div>
+
+
+                    <div class="feature-card">
+                        <i class="fas fa-layer-group icon"></i>
+                        <h3>Esteira de Iniciativas</h3>
+                        <p>Modelo estruturado com fases de identificação, valoração, priorização, execução e conclusão das iniciativas.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-balance-scale icon"></i>
+                        <h3>Priorização Orientada a Valor</h3>
+                        <p>Uso de Curva ABC, matrizes de impacto, esforço e valor x complexidade para foco nas maiores alavancas.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-tasks icon"></i>
+                        <h3>App de Gestão das Iniciativas</h3>
+                        <p>Desenvolvimento de um aplicativo em Power Apps para gestão de iniciativas, planos de ação, responsáveis, prazos e status.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-chart-bar icon"></i>
+                        <h3>Dashboards Executivos</h3>
+                        <p>Power BI para acompanhamento mensal do planejado x realizado, ofensores de custo e evolução por cluster.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-calendar-check icon"></i>
+                        <h3>Rituais de Governança</h3>
+                        <p>Reuniões semanais de acompanhamento e apresentações quinzenais à diretoria para tomada de decisão.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="parallax-window problem-bg"></div>
+
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <span class="label">A Solução</span>
+
+                    <h2>Um Modelo Integrado de Governança, Dados e Execução</h2>
+
+                    <p class="section-text">
+                        Para enfrentar a complexidade da operação e a fragmentação das iniciativas, foi desenhado e implementado um modelo integrado de governança focado em geração de valor, disciplina de execução e transparência para a liderança.
+                    </p>
+
+                    <p class="section-text">
+                        A solução combinou estrutura organizacional clara, rituais de gestão, ferramentas digitais e análise de dados, conectando iniciativas operacionais diretamente aos resultados financeiros.
+                    </p>
+                </div>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-sitemap icon"></i>
+                        <h3>Modelo de Governança por Clusters</h3>
+                        <p>Estruturação de clusters de custo com líderes executivos, pontos focais e times multidisciplinares.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-stream icon"></i>
+                        <h3>Esteira de Iniciativas</h3>
+                        <p>Fluxo padronizado para identificação, valoração, priorização, execução e encerramento das iniciativas.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-tools icon"></i>
+                        <h3>Ferramentas de Priorização</h3>
+                        <p>Uso de Curva ABC, matrizes de impacto, valor x complexidade e potencial financeiro.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-mobile-alt icon"></i>
+                        <h3>Aplicativo de Gestão das Iniciativas</h3>
+                        <p>Power App para gestão de iniciativas, planos de ação, responsáveis, prazos e status.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-chart-pie icon"></i>
+                        <h3>Dashboards Executivos</h3>
+                        <p>Power BI com visão consolidada do desafio de redução de custos, plano x realizado e ofensores.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-calendar-check icon"></i>
+                        <h3>Rituais de Acompanhamento</h3>
+                        <p>Reuniões semanais de execução e apresentações quinzenais para a diretoria.</p>
+                    </div>
+                </div>
+                
+
+            </div>
+        </section>
+
+        <div class="parallax-window solution-bg"></div>
+
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <span class="label">Resultados & Impacto</span>
+
+                    <h2>Resultados Concretos a partir de Governança e Execução Estruturada</h2>
+
+                    <p class="section-text">
+                        A implementação do modelo de governança, aliada ao uso de dados e ferramentas digitais, permitiu transformar ideias dispersas em um portfólio estruturado de iniciativas com impacto financeiro mensurável.
+                    </p>
+
+                    <p class="section-text">
+                        O acompanhamento contínuo e a visibilidade executiva garantiram foco nas iniciativas de maior valor e disciplina na execução ao longo do tempo.
+                    </p>
+                </div>
+
+                <div class="feature-grid">
+                    <div class="feature-card highlight">
+                        <i class="fas fa-lightbulb icon"></i>
+                        <h3>+40 Iniciativas Mapeadas</h3>
+                        <p>Portfólio estruturado de iniciativas distribuídas entre os clusters de custo e diretorias.</p>
+                    </div>
+
+                    <div class="feature-card highlight">
+                        <i class="fas fa-coins icon"></i>
+                        <h3>R$ 45MM em Potencial</h3>
+                        <p>Potencial estimado de redução de custos consolidado na esteira de iniciativas.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-project-diagram icon"></i>
+                        <h3>Visão Consolidada por Cluster</h3>
+                        <p>Acompanhamento estruturado por tipo de custo, diretoria e unidade operacional.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-chart-line icon"></i>
+                        <h3>Plano x Real Mensal</h3>
+                        <p>Monitoramento contínuo da evolução financeira de cada iniciativa.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-users-cog icon"></i>
+                        <h3>Engajamento Multidisciplinar</h3>
+                        <p>Times formados por especialistas de diferentes unidades e áreas da organização.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-check-circle icon"></i>
+                        <h3>Decisão Executiva Orientada a Dados</h3>
+                        <p>Reuniões de diretoria suportadas por dashboards claros e indicadores confiáveis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="cta-section">
+            <div class="container">
+                <h2>Estratégia, priorização e entrega de produto</h2>
+                <p>Ajudo times a transformar problemas reais em soluções bem definidas, priorizadas e com impacto mensurável.
+                <a href="https://wa.me/5598987417135" class="cta-button">Vamos conversar!</a></p>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <button id="scrollToTopBtn" title="Voltar ao Topo"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="../js/include.js"></script>
+    <script src="../menu_mobile.js"></script>
+
+
+    
+    <script>
+        // Animações de entrada (Intersection Observer)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.feature-card, .inline-image').forEach(el => {
+            el.style.opacity = 0;
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+            observer.observe(el);
+        });
+
+        // Lógica do Scroll Top
+        const scbtn = document.getElementById("scrollToTopBtn");
+        window.onscroll = () => {
+            scbtn.style.display = (window.scrollY > 400) ? "flex" : "none";
+        };
+        scbtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+    </script>
+</body>
+</html>
