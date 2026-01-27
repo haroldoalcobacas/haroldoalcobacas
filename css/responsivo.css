@@ -1,7 +1,7 @@
 @media (max-width: 1020px) {
 
-    #site-header header {
-        background-image: none;
+    header.site-header {
+        background-image: none; 
         background-color: var(--cor-primary);
     }
 
@@ -13,40 +13,88 @@
 
     
    /* -------- menu mobile -------- */
-
-    /* Mostra botão do menu mobile */
+    /* -------- Botão Hamburguer -------- */
     .btn-menu-mobile {
         display: block;
         position: relative;
-        z-index: 1900;
+        z-index: 2000;
+        cursor: pointer;
     }
 
-    /* Ajuste do ícone */
     .btn-menu-mobile i {
         font-size: 2.2rem;
         color: var(--cor-secondary);
     }
 
-    /* Esconde menu desktop */
-    .menu-desktop {
+    /* -------- Esconde menu desktop -------- */
+    .menu-desktop,
+    #submenu-cases,
+    .header-submenu {
         display: none;
     }
 
-    /* Submenu de Cases no Menu Mobile */
+    /* -------- Container Menu Mobile -------- */
+    .menu-mobile {
+        position: fixed;
+        top: 100px; 
+        right: -100%; 
+        width: 80%;
+        height: calc(100vh - 100px);
+        background-color:#44445a;
+        z-index: 9000;
+        padding: 32px;
+        transition: right 0.4s ease;
+        overflow-y: auto;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* -------- Menu aberto -------- */
+    .menu-mobile.abrir-menu {
+        right: 0;
+    }
+
+    #btn-fechar-menu {
+        font-size: 2rem;
+        cursor: pointer;
+        z-index: 10001;
+        color: var(--cor-primary);
+    }
+
+    /* -------- Links principais -------- */
+    .menu-mobile a {
+        display: block;
+        padding: 12px 0;
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-decoration: none;
+        color: #ffffff; /* TEXTO BRANCO */
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .menu-mobile a:hover {
+        color: var(--cor-primary); /* AMARELO NO HOVER */
+        transform: translateX(4px);
+    }
+
+    /* -------- Submenu de Cases -------- */
     .menu-mobile-cases {
-        margin-top: 20px;
-        padding-top: 15px;
-        border-top: 1px solid rgba(255, 255, 255, 0.15);
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
     }
 
     .menu-mobile-title {
         display: block;
+        margin-bottom: 14px;
         font-size: 0.75rem;
         font-weight: 700;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: var(--cor-secondary);
-        margin-bottom: 10px;
+        color: var(--cor-primary); /* amarelo */
     }
 
     .menu-mobile-cases ul {
@@ -56,43 +104,16 @@
     }
 
     .menu-mobile-cases li a {
-        display: block;
-        padding: 10px 0;
-        font-size: 0.9rem;
-        color: #fff;
-        text-decoration: none;
+        font-size: 0.95rem;
         opacity: 0.9;
     }
 
     .menu-mobile-cases li a:hover {
         opacity: 1;
-        color: var(--cor-secondary);
+        color: var(--cor-primary);
     }
 
-    .case-shortcuts .container-nav {
-        gap: 8px;
-        flex-wrap: wrap;
-    }
 
-    .case-shortcuts a {
-        padding: 6px 12px;
-        font-size: 0.75rem;
-    }
-
-    #submenu-cases {
-        display: none;
-    }
-    .container-nav {
-        gap: 10px;
-        overflow-x: auto;
-        padding: 0 15px;
-        justify-content: flex-start;
-    }
-    .case-shortcuts a {
-        padding: 8px 18px;
-        font-size: 0.75rem;
-        flex-shrink: 0;
-    }
 
 
     /* Estilo da hero */
@@ -162,11 +183,21 @@
 
 
     section.especialidades .flex {
-        gap: 60px;
-        display: block;
-        text-align: center;
-        
-        
+        display: flex;              /* manter flex */
+        flex-direction: column;     /* empilha os cards */
+        align-items: center;        /* centraliza horizontalmente */
+        gap: 30px;                  /* espaçamento entre os cards */
+        text-align: center;         /* centraliza texto */
+    }
+
+    section.especialidades .especialidades-box {
+        width: 90%;                 /* ocupa quase toda a tela */
+        margin-top: 20px;           /* menos espaço no topo */
+    }
+
+    section.especialidades .especialidades-box h3,
+    section.especialidades .especialidades-box p {
+        text-align: center;         /* centraliza texto */
     }
 
     /* -------Estilo Portifolio -----------*/
@@ -191,15 +222,22 @@
     }
 
     .project-title {
-        font-weight: 600;
-        margin-bottom: 10px;
-        text-align: center;
-        font-size: 1.2em;
+        font-weight: 800;
+        margin-bottom: 0px;
+        text-align: left;
+        font-size: 0.9rem;
         color: #676f86;
         position: relative;
         cursor: default;
         transition: color 0.3s;
-    }   
+    }  
+
+    .btn-case {
+        display: inline-block;
+        padding: 9px;
+        font-size: 0.8rem;
+        margin-top: 0px;
+    }
 
 
     /*   cta section   */
@@ -252,7 +290,7 @@
         padding: 5px;
         line-height: 3;
     }
-
+}
 
 
     @media (max-width: 480px) {
@@ -266,9 +304,5 @@
             height: 32px;
             font-size: 14px;
         }
-
-
-
-
 
 }

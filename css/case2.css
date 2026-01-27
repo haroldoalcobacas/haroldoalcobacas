@@ -220,7 +220,7 @@ section {
    ========================================================================== */
 .cta-section {
     background: var(--cor-texto);
-    color: var(--text-main);
+    color: var(--text-dim);
     text-align: center;
     padding: 80px 20px;
     margin-top: 0;
@@ -229,7 +229,7 @@ section {
 .cta-button {
     display: inline-block;
     background: var(--cor-primary);
-    color: var(--cor-secondary);
+    color: var(--text-dim);
     padding: 18px 45px;
     border-radius: 50px;
     text-decoration: none;

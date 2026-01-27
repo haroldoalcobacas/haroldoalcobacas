@@ -15,9 +15,66 @@
 </head>
 <body class="page-case">
 
-    <div id="site-header"></div>
+    <header class="site-header">
+        <div class="interface">
 
-    <div id="submenu-cases"></div>
+            <section class="logo-cabecalho">
+            <img src="../images/logo.png" alt="Logo do site">
+            </section>
+
+            <nav class="menu-desktop">
+            <ul>
+                <li><a href="../index.html#inicio">Início</a></li>
+                <li><a href="../index.html#sobre-mim">Sobre mim</a></li>
+                <li><a href="../index.html#especialidades">Especialidades</a></li>
+                <li><a href="../index.html#portifolio">Projetos</a></li>
+                <li><a href="../cases/lavanderia.html">Cases</a></li>
+                <li>
+                <a href="https://web.whatsapp.com/send?phone=5598987417135" target="_blank">
+                    <button>Contato</button>
+                </a>
+                </li>
+            </ul>
+            </nav>
+
+            <div class="btn-menu-mobile" id="btn-menu-mobile">
+            <i class="bi bi-list"></i>
+            </div>
+
+            <nav class="menu-mobile" id="menu-mobile">
+            <i class="bi bi-x-circle" id="btn-fechar-menu"></i>
+
+            <ul>
+                <li><a href="../index.html#inicio">Início</a></li>
+                <li><a href="../index.html#sobre-mim">Sobre mim</a></li>
+                <li><a href="../index.html#especialidades">Especialidades</a></li>
+                <li><a href="../index.html#portifolio">Projetos</a></li>
+                <li>
+                    <a href="https://web.whatsapp.com/send?phone=5598987417135" target="_blank">
+                    Contato
+                    </a>
+                </li>
+            </ul>
+
+            <!-- SUBMENU DE CASES NO MOBILE -->
+            <div class="menu-mobile-cases">
+                <span class="menu-mobile-title">Cases</span>
+                <ul>
+                <li><a href="../cases/lavanderia.html">Case 1 - Check Fácil</a></li>
+                <li><a href="../cases/case2.html">Case 2 - Frente de Produtividade</a></li>
+
+                </ul>
+            </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Submenu de Cases -->
+    <nav id="submenu-cases" class="case-shortcuts">
+        <div class="container-nav">
+            <a href="../cases/lavanderia.html" class="active">Case 1</a>
+            <a href="../cases/case2.html">Case 2</a>
+        </div>
+    </nav>
 
     <main>
         <section class="case-hero" id="top">
@@ -261,11 +318,37 @@
         </div>
     </main>
 
-    <div id="footer"></div>
+    <!-- <div id="footer"></div> -->
+    <footer id="contato">
+        <div class="interface">
+
+            <div class="logo-footer">
+                <img src="/images/logo-.png" alt="logo do site">
+                <h2>Transforme ideias em soluções</h2>
+                <p>
+                    Fale comigo e encontraremos as melhores soluções para resolver seus problemas
+                    com eficiência e inovação.
+                </p>
+            </div>
+
+            <div class="btn-redes">
+                <a href="https://web.whatsapp.com/send?phone=5598987417135" target="_blank">
+                    <button><i class="bi bi-whatsapp"></i></button>
+                </a>
+                <a href="https://www.linkedin.com/in/haroldoalcobacas/" target="_blank">
+                    <button><i class="bi bi-linkedin"></i></button>
+                </a>
+                <a href="https://github.com/haroldoalcobacas" target="_blank">
+                    <button><i class="bi bi-github"></i></button>
+                </a>
+            </div>
+
+        </div>
+    </footer>
 
     <button id="scrollToTopBtn" title="Voltar ao Topo"><i class="fas fa-arrow-up"></i></button>
 
-    <script src="../js/include.js"></script>
+    <!-- <script src="../js/include.js"></script> -->
     <script src="../js/menu_mobile.js"></script>
 
 

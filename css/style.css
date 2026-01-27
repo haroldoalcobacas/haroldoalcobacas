@@ -81,7 +81,7 @@ button:hover{
 
 /* Cabeçalho */
 /* HEADER GLOBAL */
-#site-header header {
+header.site-header {
     position: fixed;
     top: 0;
     width: 100%;
@@ -142,64 +142,79 @@ header .menu-desktop ul li button:hover {
     transform: scale(0.9);
 }
 
-/* Menu mobile */
 
-.menu-mobile {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--cor-secondary);
-    text-align: right;
-    padding: 32px 20px;
-    pointer-events: none;
-    transition: 0.5s;
-    z-index: 5000;
-}
+/* SUBMENU */
+/* ========================================================================== 
+   SUBMENU DE CASES - ESTILO DE BOTÃO
+   ========================================================================== */
 
-.menu-mobile ul{
-    list-style: none;
-    padding: 34px 0;
-}
-
-.menu-mobile ul li a{
-    color: var(--cor-primary);
-    font-size: 1.2rem;
-    text-decoration: none;
-    padding: 22px;
-    display: block;
-    transition: .4s;
-}
-.menu-mobile ul li a:hover{
-    background-color: var(--cor-primary);
-    color: var(--cor-link-hover);
-}
-
-.btn-menu-mobile i{
-    margin-top: 10px;
-    font-size: 2.2rem;
-    color: var(--cor-secondary); 
-    cursor: pointer;  
-}
-
-.menu-mobile .bi-x-circle {
-    font-size: 2.2rem;
-    color: var(--cor-primary);
-    cursor: pointer;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
-.menu-mobile.abrir-menu{
+#submenu-cases {
+    position: absolute; /* sai do fluxo do header */
+    top: 100px;         /* logo abaixo do header de 100px */
     left: 0;
-    pointer-events: initial;
+    width: 100%;
+    z-index: 1300;      /* maior que header (1200) */
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-light, #eee);
 }
 
-.btn-menu-mobile {
-    position: relative;
-    z-index: 1300;
+.case-shortcuts .container-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+/* Estado Base do Botão */
+.case-shortcuts a {
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 50px;
+    font-size: 0.55rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    color: var(--cor-secondary);
+    background-color: var(--cor-primary);
+    border: 2px solid var(--cor-primary2);
+
+    transition: all 0.35s ease;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Hover */
+.case-shortcuts a:hover {
+    background-color: var(--cor-secondary);
+    border-color: var(--cor-secondary);
+    color: #fff;
+
+    transform: translateY(-2px) scale(1.08);
+    box-shadow: 0 10px 20px rgba(23, 4, 59, 0.35);
+}
+
+/* Botão da página atual */
+.case-shortcuts a.active {
+    background-color: var(--cor-secondary) !important;
+    color: var(--cor-terciary) !important;
+    border-color: var(--cor-secondary) !important;
+
+    transform: scale(1.05);
+    box-shadow: 0 4px 14px rgba(20, 20, 20, 0.6);
+    cursor: default;
+}
+
+.case-shortcuts a.active:active {
+    transform: scale(1.05);
+}
+
+
+
+
 
 /* HERO */
 section.hero{
@@ -531,7 +546,7 @@ section.portifolio {
 /* Container dos cards usando Grid Responsiva */
 section.portifolio .flex {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     margin-top: 60px;
     justify-items: center;
@@ -615,7 +630,7 @@ section.portifolio .flex {
     font-size: 0.7rem;
     color: #676f86;
     padding: 2px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     text-align: left;
     min-height: 20px; 
 }
@@ -623,7 +638,7 @@ section.portifolio .flex {
 /* Botão Moderno */
 .btn-case {
     display: inline-block;
-    padding: 10px;
+    padding: 6px;
     border-radius: 12px;
     background-color: var(--cor-link-hover);
     color: #ffffff;
@@ -633,7 +648,7 @@ section.portifolio .flex {
     font-size: 0.9rem;
     transition: all 0.3s ease;
     border: 1px solid var(--cor-secondary);
-    margin-top: 2px;
+    margin-top: 1px;
 }
 
 .btn-case:hover {
@@ -649,10 +664,11 @@ footer{
 }
 
 footer .interface {
-    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
     color: var(--cor-texto); 
 }
 
@@ -672,7 +688,7 @@ footer .btn-redes button {
     cursor: pointer;
     transition: transform 0.3s;
     padding: 8px;
- 
+    margin: 15px 4px;
 }
 
 footer .btn-redes button:hover {
@@ -763,109 +779,6 @@ footer .btn-redes button:hover {
         height: 75vh;
     }
 }
-
-/* ==========================================================================
-   SUBMENU DE CASES - ESTILO DE BOTÃO
-   ========================================================================== */
-
-#submenu-cases {
-    position: fixed;
-    top: 90px; /* Ajuste para ficar exatamente abaixo do seu header */
-    left: 0;
-    width: 100%;
-    z-index: 1200;
-    background: rgba(255, 255, 255, 0.85); /* Efeito semi-transparente */
-    backdrop-filter: blur(10px); /* Desfoque no fundo para ficar moderno */
-    padding: 10px 0;
-    border-bottom: 1px solid var(--border-light, #eee);
-}
-
-.case-shortcuts .container-nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Estado Base do Botão */
-.case-shortcuts a {
-    text-decoration: none;
-    padding: 6px 22px;
-    border-radius: 50px;
-    font-size: 0.55rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-
-    color: var(--cor-secondary);
-    background-color: var(--cor-primary);
-    border: 2px solid var(--cor-primary2);
-
-    transition: all 0.35s ease;
-    display: inline-block;
-    cursor: pointer;
-}
-
-/* EFEITO DE HOVER (Passar o Mouse) */
-.case-shortcuts a:hover {
-    background-color: var(--cor-secondary);
-    border-color: var(--cor-secondary);
-    color: #fff;
-
-    transform: translateY(-2px) scale(1.08);
-    box-shadow: 0 10px 20px rgba(23, 4, 59, 0.35);
-}
-
-/* Botão da página atual */
-.case-shortcuts a.active {
-    background-color: var(--cor-secondary) !important;
-    color: var(--cor-terciary) !important;
-    border-color: var(--cor-secondary) !important;
-
-    transform: scale(1.05); /* DESTACA */
-    box-shadow: 0 4px 14px rgba(20, 20, 20, 0.6);
-    cursor: default;
-}
-
-.case-shortcuts a.active:active {
-    transform: scale(1.05);
-}
-
-.menu-mobile-cases {
-    margin-top: 30px;
-    border-top: 1px solid rgba(255,255,255,0.2);
-    padding-top: 20px;
-}
-
-.menu-mobile-title {
-    display: block;
-    color: var(--cor-primary);
-    font-size: 0.85rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 12px;
-}
-
-.menu-mobile-cases ul {
-    list-style: none;
-    padding: 0;
-}
-
-.menu-mobile-cases li a {
-    display: block;
-    padding: 14px 22px;
-    font-size: 1.1rem;
-    color: #fff;
-    text-decoration: none;
-}
-
-.menu-mobile-cases li a:hover {
-    background-color: var(--cor-primary);
-    color: var(--cor-secondary);
-}
-
 
 
 
