@@ -79,31 +79,25 @@ button:hover{
 }
 
 
-/* ==========================================================================
-   HEADER / MENU – ESTADO BASE (DESKTOP)
-   ========================================================================== */
 
-/* Visibilidade padrão */
-@media screen and (max-width: 1024px) {
-    
-    /* Esconde o menu desktop */
+/* ==========================================================
+   HEADER – ESTADO BASE (DESKTOP)
+   ========================================================== */
+
+    /* Menu desktop visível */
     .menu-desktop {
-        display: none !important;
-    }
-
-    /* Mostra o botão do menu hambúrguer */
-    .btn-menu-mobile {
         display: block;
-        font-size: 30px;
-        color: var(--cor-primary);
-        cursor: pointer;
     }
 
-    /* O menu mobile continua escondido até ser acionado pelo JS */
+    /* Menu mobile escondido */
     .menu-mobile {
-        display: none; 
+        display: none;
     }
-}
+
+    /* Botão hambúrguer escondido */
+    .btn-menu-mobile {
+        display: none;
+    }
 /* ==========================================================================
    HEADER GLOBAL
    ========================================================================== */
