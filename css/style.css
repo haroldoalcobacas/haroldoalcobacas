@@ -79,8 +79,27 @@ button:hover{
 }
 
 
-/* Cabeçalho */
-/* HEADER GLOBAL */
+/* ==========================================================================
+   HEADER / MENU – ESTADO BASE (DESKTOP)
+   ========================================================================== */
+
+/* Visibilidade padrão */
+.menu-desktop {
+    display: block;
+}
+
+.btn-menu-mobile {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+/* ==========================================================================
+   HEADER GLOBAL
+   ========================================================================== */
+
 header.site-header {
     position: fixed;
     top: 0;
@@ -96,17 +115,22 @@ header.site-header {
     z-index: 1200;
 }
 
-
-header> .interface{
+/* Container interno */
+header > .interface {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header .logo-cabecalho img{
+
+/* Logo */
+header .logo-cabecalho img {
     margin-top: 10px;
-    max-width: 500%;
     height: 75px;
 }
+
+/* ==========================================================================
+   MENU DESKTOP
+   ========================================================================== */
 
 header .menu-desktop ul {
     display: flex;
@@ -114,12 +138,13 @@ header .menu-desktop ul {
     list-style: none;
     gap: 35px;
     white-space: nowrap;
-       
 }
+
 header .menu-desktop ul li {
     display: inline-block;
 }
 
+/* Links */
 header .menu-desktop ul a {
     color: var(--cor-texto);
     text-decoration: none;
@@ -133,33 +158,35 @@ header .menu-desktop ul a:hover {
     transform: scale(1.2);
 }
 
-header .menu-desktop ul li button{
+/* Botão contato */
+header .menu-desktop ul li button {
     padding: 0.4rem 0.8rem;
     font-weight: bold;
     transition: all 0.5s ease;
 }
+
 header .menu-desktop ul li button:hover {
     transform: scale(0.9);
 }
 
-
-/* SUBMENU */
-/* ========================================================================== 
-   SUBMENU DE CASES - ESTILO DE BOTÃO
+/* ==========================================================================
+   SUBMENU DE CASES (DESKTOP)
    ========================================================================== */
 
 #submenu-cases {
-    position: absolute; /* sai do fluxo do header */
-    top: 100px;         /* logo abaixo do header de 100px */
+    position: absolute;
+    top: 100px;               /* abaixo do header */
     left: 0;
     width: 100%;
-    z-index: 1300;      /* maior que header (1200) */
+    z-index: 1300;            /* acima do header */
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(8px);
     padding: 10px 0;
     border-bottom: 1px solid var(--border-light, #eee);
+    display: none;
 }
 
+/* Container dos botões */
 .case-shortcuts .container-nav {
     display: flex;
     justify-content: center;
@@ -168,7 +195,11 @@ header .menu-desktop ul li button:hover {
     margin: 0 auto;
 }
 
-/* Estado Base do Botão */
+/* ==========================================================================
+   BOTÕES DO SUBMENU
+   ========================================================================== */
+
+/* Estado base */
 .case-shortcuts a {
     text-decoration: none;
     padding: 5px 20px;
@@ -182,9 +213,9 @@ header .menu-desktop ul li button:hover {
     background-color: var(--cor-primary);
     border: 2px solid var(--cor-primary2);
 
-    transition: all 0.35s ease;
     display: inline-block;
     cursor: pointer;
+    transition: all 0.35s ease;
 }
 
 /* Hover */
@@ -197,7 +228,7 @@ header .menu-desktop ul li button:hover {
     box-shadow: 0 10px 20px rgba(23, 4, 59, 0.35);
 }
 
-/* Botão da página atual */
+/* Página ativa */
 .case-shortcuts a.active {
     background-color: var(--cor-secondary) !important;
     color: var(--cor-terciary) !important;
@@ -211,7 +242,6 @@ header .menu-desktop ul li button:hover {
 .case-shortcuts a.active:active {
     transform: scale(1.05);
 }
-
 
 
 
