@@ -84,18 +84,27 @@ button:hover{
    ========================================================================== */
 
 /* Visibilidade padrão */
-.menu-desktop {
-    display: block;
-}
+@media screen and (max-width: 1024px) {
+    
+    /* Esconde o menu desktop */
+    .menu-desktop {
+        display: none !important;
+    }
 
-.btn-menu-mobile {
-    display: none;
-}
+    /* Mostra o botão do menu hambúrguer */
+    .btn-menu-mobile {
+        display: block;
+        font-size: 30px;
+        color: var(--cor-primary);
+        cursor: pointer;
+    }
 
-.menu-mobile {
-    display: none;
-}
+    /* O menu mobile continua escondido até ser acionado pelo JS */
+    .menu-mobile {
+        display: none; 
 
+    }
+}
 /* ==========================================================================
    HEADER GLOBAL
    ========================================================================== */
@@ -183,7 +192,6 @@ header .menu-desktop ul li button:hover {
     backdrop-filter: blur(8px);
     padding: 10px 0;
     border-bottom: 1px solid var(--border-light, #eee);
-    display: none;
 }
 
 /* Container dos botões */
