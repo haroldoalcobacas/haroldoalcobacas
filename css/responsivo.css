@@ -45,6 +45,7 @@
         padding: 32px;
         transition: right 0.4s ease;
         overflow-y: auto;
+        display: none;
     }
     nav ul {
         list-style: none;
@@ -54,7 +55,9 @@
 
     /* -------- Menu aberto -------- */
     .menu-mobile.abrir-menu {
+        display: block;
         right: 0;
+        transition: right 0.4s ease;
     }
 
     #btn-fechar-menu {
