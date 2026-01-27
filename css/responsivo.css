@@ -40,12 +40,16 @@
         right: -100%; 
         width: 80%;
         height: calc(100vh - 100px);
-        background-color:#44445a;
-        z-index: 9000;
+        background-color: #44445a;
+
+        z-index: 9999;
+
         padding: 32px;
-        transition: right 0.4s ease;
         overflow-y: auto;
-        display: none;
+
+        display: block; /* 👈 ESSENCIAL */
+        transition: right 0.4s ease;
+
         visibility: hidden;
         pointer-events: none;
     }
